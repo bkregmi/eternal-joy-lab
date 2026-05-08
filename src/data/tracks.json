@@ -1,0 +1,21 @@
+{
+  "gita-sanskrit": [
+    { "name": "Gita-Intro.mp3", "path": "media/audio/SriMadBhagwatGita/Sanskrit/Gita-Intro.mp3" },
+    { "name": "Gita-01.mp3", "path": "media/audio/SriMadBhagwatGita/Sanskrit/Gita-01.mp3" }
+  ],
+  "bhagavatam": [
+    {
+      "group": "Skandha 1",
+      "tracks": [
+        { "name": "SB-01-01.mp3", "path": "media/audio/SriMadBhagawatam/Sanskrit/skandha1/SB-01-01.mp3" },
+        { "name": "SB-01-02.mp3", "path": "media/audio/SriMadBhagawatam/Sanskrit/skandha1/SB-01-02.mp3" }
+      ]
+    },
+    {
+      "group": "Skandha 2",
+      "tracks": [
+        { "name": "SB-02-01.mp3", "path": "media/audio/SriMadBhagawatam/Sanskrit/skandha2/SB-02-01.mp3" }
+      ]
+    }
+  ]
+}

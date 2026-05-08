@@ -1,0 +1,15 @@
+{
+    "Effect": "Allow",
+    "Principal": {
+        "Federated": "arn:aws:iam::783764590023:oidc-provider/token.actions.githubusercontent.com"
+    },
+    "Action": "sts:AssumeRoleWithWebIdentity",
+    "Condition": {
+        "StringEquals": {
+            "token.actions.githubusercontent.com:aud": "sts.amazonaws.com"
+        },
+        "StringLike": {
+            "token.actions.githubusercontent.com:sub": "repo:bkregmi/eternal-joy-lab:ref:refs/heads/main"
+        }
+    }
+}
