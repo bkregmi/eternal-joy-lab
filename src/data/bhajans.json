@@ -1,0 +1,15 @@
+[
+    {
+      "title": "Sample Bhajan Title",
+      "slokas": [
+        {
+          "id": 1,
+          "sanskrit": [
+            "भजनको पहिलो हरफ...",
+            "दोस्रो हरफ..."
+          ],
+          "meaning": "Meaning of the bhajan lyrics."
+        }
+      ]
+    }
+]

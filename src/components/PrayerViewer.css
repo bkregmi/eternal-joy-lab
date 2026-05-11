@@ -1,0 +1,31 @@
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.controls label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.prayer-item {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.sanskrit,
+.english,
+.meaning {
+  margin-top: 0.75rem;
+}
+
+.sanskrit p,
+.english p,
+.meaning p {
+  margin: 0.25rem 0;
+}

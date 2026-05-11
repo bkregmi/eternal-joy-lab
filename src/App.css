@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.app-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.app-header nav a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #2d3a53;
+}
+
+.app-header nav a.active {
+  font-weight: bold;
+}
+
+section {
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.prayer-item {
+  margin-bottom: 1.5rem;
+}
+
+.sanskrit,
+.english,
+.meaning {
+  padding: 0.5rem;
+  border-left: 3px solid #d7dde8;
+  margin-bottom: 0.75rem;
+}

@@ -1,0 +1,31 @@
+[
+  {
+    "title": "Suryastakam (सूर्याष्टकम्)",
+    "slokas": [
+      {
+        "id": 1,
+        "sanskrit": [
+          "आदिदेव नमस्तुभ्यं प्रसीद मम भास्कर ।",
+          "दिवाकर नमस्तुभ्यं प्रभाकर नमोऽस्तु ते ॥१॥"
+        ],
+        "english": [
+          "ādideva namastubhyaṃ prasīda mama bhāskara |",
+          "divākara namastubhyaṃ prabhākara namo'stu te || 1 ||"
+        ],
+        "meaning": "Salutations to the primeval God! Be pleased with me, O Maker of the Day! Salutations to the Maker of the Day! Salutations to the Maker of Light!"
+      },
+      {
+        "id": 2,
+        "sanskrit": [
+          "सप्ताश्वरथमारूढं प्रचण्डं कश्यपात्मजम् ।",
+          "श्वेतपद्मधरं देवं तं सूर्यं प्रणमाम्यहम् ॥२॥"
+        ],
+        "english": [
+          "saptāśvarathamārūḍhaṃ pracaṇḍaṃ kaśyapātmajam |",
+          "śvetapadmadharaṃ devaṃ taṃ sūryaṃ praṇamāmyaham || 2 ||"
+        ],
+        "meaning": "I salute the Sun, who is seated on a chariot drawn by seven horses, who is very brilliant, who is the son of Kashyapa, and who holds a white lotus in his hand."
+      }
+    ]
+  }
+]

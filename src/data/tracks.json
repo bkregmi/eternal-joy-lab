@@ -1,0 +1,134 @@
+{
+  "gita-sanskrit": [
+    {
+      "name": "Gita Intro",
+      "path": "/media/audio/SriMadBhagwatGita/Sanskrit/Gita-Intro.mp3"
+    },
+    {
+      "name": "Gita 01",
+      "path": "/media/audio/SriMadBhagwatGita/Sanskrit/Gita-01.mp3"
+    }
+  ],
+  "bhagavatam": [
+    {
+      "group": "Skandha 1",
+      "tracks": [
+        {
+          "name": "SB 01 01",
+          "path": "/media/audio/SriMadBhagawatam/Sanskrit/skandha1/SB-01-01.mp3"
+        },
+        {
+          "name": "SB 01 02",
+          "path": "/media/audio/SriMadBhagawatam/Sanskrit/skandha1/SB-01-02.mp3"
+        }
+      ]
+    }
+  ],
+  "nepali-bhajans": [],
+  "satsanga": [
+    {
+      "name": "20230416 - Sankar (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_20230416_sankar.m4a"
+    },
+    {
+      "name": "20260509 - Sankar (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_20260509_sankar.m4a"
+    },
+    {
+      "name": "Hare Ram Hare Ram - Sailesh (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_hare-ram-hare-ram_sailesh.m4a"
+    },
+    {
+      "name": "Jai Jai Radh Aramana Hari Bol - Bishmita (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_jai-jai-radh-aramana-hari-bol_bishmita.m4a"
+    },
+    {
+      "name": "Nita Sewa - Khem (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_nita-sewa_khem.m4a"
+    },
+    {
+      "name": "Shyams Undar Hamaro Yaar - Salin (Satsanga)",
+      "path": "/media/audio/satsanga/satsanga_shyams-undar-hamaro-yaar_salin.m4a"
+    }
+  ],
+  "personal": [
+    {
+      "name": "Radhey Kishori Kripakaro - EJL (Iskon)",
+      "path": "/media/audio/personal/iskon_radhey-kishori-kripakaro_ejl.m4a"
+    },
+    {
+      "name": "Base Yougal Sarkar Hamaremana - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_base-yougal-sarkar-hamaremana_ejl.m4a"
+    },
+    {
+      "name": "Base Yugala Sarakara Hamare Mana - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_base-yugala-sarakara-hamare-mana_ejl.m4a"
+    },
+    {
+      "name": "Chabi Sakhi Gore Gwal Kahunka - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_chabi-sakhi-gore-gwal-kahunka_ejl.m4a"
+    },
+    {
+      "name": "Gaura Charana Anuragyo Mero Mana - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_gaura-charana-anuragyo-mero-mana_ejl.m4a"
+    },
+    {
+      "name": "Gauracharana Anuragyo Mero Mana1 - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_gauracharana-anuragyo-mero-mana1_ejl.m4a"
+    },
+    {
+      "name": "Hamahun Dekhihun Shyama Kabau Sakhi - ELJ (JKP)",
+      "path": "/media/audio/personal/jkp_hamahun-dekhihun-shyama-kabau-sakhi_elj.m4a"
+    },
+    {
+      "name": "Jai Jai Radh Aramana - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_jai-jai-radh-aramana_ejl.m4a"
+    },
+    {
+      "name": "Mahaprabhu Chaitnya - EJL (JKP)",
+      "path": "/media/audio/personal/jkp_mahaprabhu-chaitnya_ejl.m4a"
+    },
+    {
+      "name": "Darsana Denana Ndadulare - EJL (JPK)",
+      "path": "/media/audio/personal/jpk_darsana-denana-ndadulare_ejl.m4a"
+    },
+    {
+      "name": "Guru Govinda Dono Khade - EJL (Kabir)",
+      "path": "/media/audio/personal/kabir_guru-govinda-dono-khade_ejl.m4a"
+    },
+    {
+      "name": "Kasturi Tilakam01 - EJL (Stuti)",
+      "path": "/media/audio/personal/stuti_kasturi-tilakam01_ejl.m4a"
+    },
+    {
+      "name": "Ram Stuties - EJL (Stuti)",
+      "path": "/media/audio/personal/stuti_ram-stuties_ejl.m4a"
+    }
+  ],
+  "satganga": [
+    {
+      "name": "20230416 - Sankar (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_20230416_sankar.m4a"
+    },
+    {
+      "name": "20260509 - Sankar (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_20260509_sankar.m4a"
+    },
+    {
+      "name": "Hare Ram Hare Ram - Sailesh (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_hare-ram-hare-ram_sailesh.m4a"
+    },
+    {
+      "name": "Jai Jai Radh Aramana Hari Bol - Bishmita (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_jai-jai-radh-aramana-hari-bol_bishmita.m4a"
+    },
+    {
+      "name": "Nita Sewa - Khem (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_nita-sewa_khem.m4a"
+    },
+    {
+      "name": "Shyams Undar Hamaro Yaar - Salin (Satsanga)",
+      "path": "/media/audio/satganga/satsanga_shyams-undar-hamaro-yaar_salin.m4a"
+    }
+  ]
+}
