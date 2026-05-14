@@ -36,6 +36,13 @@ jobs:
           audience: sts.amazonaws.com
           output-env-credentials: true
 
+      - name: Verify Secret Availability
+        run: |
+          if [ -z "${{ secrets.AWS_S3_BUCKET }}" ]; then
+            echo "❌ Error: AWS_S3_BUCKET secret is empty. Check Environment/Secret settings."
+            exit 1
+          fi
+
       - name: Sync Build Folder to S3
         run: |
           aws s3 sync build/ s3://${{ secrets.AWS_S3_BUCKET }} --delete --exclude "media/*"
