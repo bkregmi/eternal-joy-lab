@@ -22,13 +22,13 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   const pageStyle = {
     backgroundColor: '#fcfaf5',
-    padding: '5px 15px',
+    padding: '5px 10px',
     minHeight: '100vh'
   };
 
   const controlSectionStyle = {
     background: '#fff',
-    padding: '5px 15px',
+    padding: '5px 10px',
     borderRadius: '12px',
     marginBottom: '5px',
     boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
@@ -50,7 +50,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   return (
     <div className="sloka-viewer-page" style={pageStyle}>
-      <div className="container" style={{ maxWidth: '900px', margin: '0 auto', float: 'none' }}>
+      <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', float: 'none' }}>
         <div className="row" style={{ margin: 0 }}>
           <div className="col-xs-12 text-center" style={{ marginBottom: '2px', padding: 0 }}>
             <h1 style={{ color: '#c92200', fontSize: '2.2em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
@@ -85,7 +85,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
                 {item.slokas.map((sloka, sIdx) => (
                   <div key={`${item.title}-sloka-${sloka.id}-${sIdx}`} className="sloka-container" style={{ 
                     background: '#fff',
-                    padding: '10px 15px',
+                    padding: '10px 10px',
                     borderRadius: '15px',
                     marginBottom: '5px',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
