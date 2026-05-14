@@ -16,6 +16,8 @@ import govindaAdipurusha from './data/govinda-adipurusha.json';
 import gitaDhyanam from './data/gita-dhyanam.json';
 import gitaVerses from './data/gita-selected-verses.json';
 import suryastakam from './data/suryashtakam.json';
+import Quotes from './components/Quotes';
+
 import './App.css';
 import Footer from './components/Footer';
 
@@ -39,6 +41,7 @@ function App() {
           <Route path="/satsanga-audio" element={<SatsangaAudio />} />
           <Route path="/personal-audio" element={<PersonalAudio />} />
           <Route path="/devas" element={<SlokaViewer data={suryastakam} pageTitle="Devi/Devata Prayers" />} />
+          <Route path="/wisdom" element={<Quotes />} />
           <Route path="/view/:loc/:doc/:type" element={<DocViewer />} />
         </Routes>
       </main>

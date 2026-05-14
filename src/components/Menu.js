@@ -80,6 +80,10 @@ const Menu = () => {
                 <li><Link to="/" onClick={closeAll}>Home Content</Link></li>
               </ul>
             </li>
+
+            <li>
+              <Link to="/wisdom" onClick={closeAll}>Wisdom</Link>
+            </li>
           </ul>
 
           <ul className="nav navbar-nav navbar-right">

@@ -1,14 +1,13 @@
 import React from 'react';
-import quotes from '../data/home-quotes.json';
 
 const PillarCard = ({ title, letter, color, description, labelClass }) => (
-  <div className="col-md-6" style={{ marginBottom: '30px' }}>
+  <div className="col-md-6" style={{ marginBottom: '30px', display: 'flex' }}>
     <div className="pillar-item" style={{
       padding: '25px',
       background: '#fff',
       borderRadius: '15px',
       boxShadow: '0 4px 15px rgba(0,0,0,0.05)',
-      height: '100%',
+      flex: 1,
       borderTop: `4px solid ${color}`
     }}>
       <h3 style={{ color: '#2c3e50', marginTop: 0 }}>
@@ -20,25 +19,6 @@ const PillarCard = ({ title, letter, color, description, labelClass }) => (
       <p style={{ color: '#444', lineHeight: '1.7' }}>
         {description}
       </p>
-    </div>
-  </div>
-);
-
-const SpiritualQuote = ({ text, author }) => (
-  <div className="quote-container" style={{
-    background: '#fffdf5',
-    borderLeft: '6px solid #ff9933',
-    padding: '30px',
-    borderRadius: '0 15px 15px 0',
-    marginBottom: '25px',
-    boxShadow: '0 2px 10px rgba(0,0,0,0.03)',
-    fontFamily: "'Georgia', serif"
-  }}>
-    <p style={{ fontSize: '1.2em', color: '#333', fontStyle: 'italic', marginBottom: '15px' }}>
-      "{text}"
-    </p>
-    <div style={{ textAlign: 'right', fontWeight: 'bold', color: '#c92200' }}>
-      — {author}
     </div>
   </div>
 );
@@ -102,7 +82,7 @@ function Home() {
           This framework integrates ancient wisdom into modern living through four essential pillars:
         </p>
 
-        <div className="row">
+        <div className="row" style={{ display: 'flex', flexWrap: 'wrap' }}>
           {pillars.map((pillar, idx) => (
             <PillarCard key={idx} {...pillar} />
           ))}
@@ -110,17 +90,6 @@ function Home() {
         
         <div className="text-center" style={{ marginTop: '30px', fontStyle: 'italic', color: '#888', borderTop: '1px solid #eee', paddingTop: '20px' }}>
           <p style={{ fontSize: '1.2em' }}>"When these four pillars are balanced, life becomes a lab for eternal joy."</p>
-        </div>
-      </section>
-
-      <section className="quotes-section" style={{ padding: '0 20px' }}>
-        <h2 className="text-center" style={{ marginBottom: '40px', color: '#2c3e50', fontFamily: "'Georgia', serif" }}>Words of Wisdom</h2>
-        <div className="row">
-          <div className="col-md-8 col-md-offset-2">
-            {quotes.map((quote, index) => (
-              <SpiritualQuote key={index} text={quote.text} author={quote.author} />
-            ))}
-          </div>
         </div>
       </section>
     </div>

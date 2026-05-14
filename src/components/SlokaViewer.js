@@ -22,7 +22,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   const pageStyle = {
     backgroundColor: '#fcfaf5',
-    padding: '20px',
+    padding: '60px 20px',
     minHeight: '100vh'
   };
 
@@ -50,40 +50,46 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   return (
     <div className="sloka-viewer-page" style={pageStyle}>
-      <div className="row">
-        <div className="col-md-10 col-md-offset-1">
-          <section style={{ padding: '20px' }}>
-            <h1 className="text-center" style={{ color: '#c92200', fontFamily: "'Georgia', serif", marginBottom: '30px', fontWeight: 'bold' }}>
+      <div className="container" style={{ maxWidth: '900px', margin: '0 auto', float: 'none' }}>
+        <div className="row" style={{ margin: 0 }}>
+          <div className="col-xs-12 text-center" style={{ marginBottom: '50px', padding: 0 }}>
+            <h1 style={{ color: '#c92200', fontSize: '2.6em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
               {pageTitle}
             </h1>
-            
+            <div style={{ width: '100px', height: '4px', background: '#ff9933', margin: '20px auto' }}></div>
+          </div>
+        </div>
+
+        <div className="row" style={{ margin: 0 }}>
+          <div className="col-xs-12" style={{ padding: 0 }}>
             <div className="controls" style={controlSectionStyle}>
-              <label style={checkboxStyle}>
-                <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.sanskrit} onChange={() => toggleVisibility('sanskrit')} />
-                Sanskrit
-              </label>
-              <label style={checkboxStyle}>
-                <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.english} onChange={() => toggleVisibility('english')} />
-                Transliteration
-              </label>
-              <label style={checkboxStyle}>
-                <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.meaning} onChange={() => toggleVisibility('meaning')} />
-                Meaning
-              </label>
-            </div>
+                <label style={checkboxStyle}>
+                  <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.sanskrit} onChange={() => toggleVisibility('sanskrit')} />
+                  Sanskrit
+                </label>
+                <label style={checkboxStyle}>
+                  <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.english} onChange={() => toggleVisibility('english')} />
+                  Transliteration
+                </label>
+                <label style={checkboxStyle}>
+                  <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.meaning} onChange={() => toggleVisibility('meaning')} />
+                  Meaning
+                </label>
+              </div>
 
             {data.map((item, index) => (
               <article key={item.title || index} className="prayer-item" style={{ marginBottom: '40px', border: 'none' }}>
-                <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #ff9933', paddingBottom: '10px', marginBottom: '25px', fontFamily: "'Georgia', serif" }}>
+                <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #ff9933', paddingBottom: '10px', marginBottom: '30px', fontFamily: "'Georgia', serif", fontWeight: 'bold' }}>
                   {item.title}
                 </h2>
                 {item.slokas.map((sloka, sIdx) => (
                   <div key={`${item.title}-sloka-${sloka.id}-${sIdx}`} className="sloka-container" style={{ 
                     background: '#fff',
-                    padding: '25px',
+                    padding: '35px',
                     borderRadius: '15px',
-                    marginBottom: '20px',
-                    boxShadow: '0 2px 15px rgba(0,0,0,0.04)',
+                    marginBottom: '35px',
+                    boxShadow: '0 10px 25px rgba(0,0,0,0.04)',
+                    fontFamily: "'Georgia', serif",
                     border: 'none', // Removed the internal border
                     borderLeft: '6px solid #ff9933' // Reinstated saffron border
                   }}>
@@ -110,7 +116,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
                 ))}
               </article>
             ))}
-          </section>
+          </div>
         </div>
       </div>
     </div>
