@@ -22,7 +22,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   const pageStyle = {
     backgroundColor: '#fcfaf5',
-    padding: '5px 10px',
+    padding: '5px',
     minHeight: '100vh'
   };
 
@@ -50,21 +50,21 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   return (
     <div className="sloka-viewer-page" style={pageStyle}>
-      <div className="container" style={{ maxWidth: '1000px', margin: '0 auto', float: 'none' }}>
-        <div className="row" style={{ margin: 0 }}>
-          <div className="col-xs-12 text-center" style={{ marginBottom: '2px', padding: 0 }}>
-            <h1 style={{ color: '#c92200', fontSize: '2.2em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
+      <div className="container-fluid" style={{ padding: '0 15px' }}>
+        <div className="row">
+          <div className="col-xs-12 text-center" style={{ marginBottom: '5px' }}>
+            <h1 style={{ color: '#c92200', fontSize: '2em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '5px' }}>
               {pageTitle}
             </h1>
-            <div style={{ width: '100px', height: '3px', background: '#ff9933', margin: '5px auto' }}></div>
+            <div style={{ width: '80px', height: '3px', background: '#ff9933', margin: '5px auto' }}></div>
           </div>
         </div>
 
-        <div className="row" style={{ margin: 0 }}>
-          <div className="col-xs-12" style={{ padding: 0 }}>
+        <div className="row">
+          <div className="col-xs-12">
             <div className="controls" style={controlSectionStyle}>
                 <label style={checkboxStyle}>
-                  <input type="checkbox" style={{ marginRight: '8px' }} checked={visibility.sanskrit} onChange={() => toggleVisibility('sanskrit')} />
+                  <input type="checkbox" style={{ marginRight: '5px' }} checked={visibility.sanskrit} onChange={() => toggleVisibility('sanskrit')} />
                   Sanskrit
                 </label>
                 <label style={checkboxStyle}>
@@ -85,9 +85,9 @@ const SlokaViewer = ({ data, pageTitle }) => {
                 {item.slokas.map((sloka, sIdx) => (
                   <div key={`${item.title}-sloka-${sloka.id}-${sIdx}`} className="sloka-container" style={{ 
                     background: '#fff',
-                    padding: '10px 10px',
+                    padding: '8px 15px',
                     borderRadius: '15px',
-                    marginBottom: '5px',
+                    marginBottom: '8px',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                     fontFamily: "'Georgia', serif",
                     border: 'none', // Removed the internal border

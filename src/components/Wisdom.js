@@ -23,8 +23,8 @@ const SpiritualQuote = ({ text, author }) => (
 function Wisdom() {
   return (
     <div className="quotes-page" style={{ backgroundColor: '#fcfaf5', minHeight: '100vh', padding: '60px 20px' }}>
-      <div className="container" style={{ maxWidth: '900px', margin: '0 auto', float: 'none' }}>
-        <div className="row" style={{ margin: 0 }}>
+      <div className="container-fluid" style={{ padding: '0 10px' }}>
+        <div className="row">
           <div className="col-xs-12 text-center" style={{ marginBottom: '50px', padding: 0 }}>
             <h1 style={{ color: '#c92200', fontSize: '2.6em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
               Words of Wisdom
@@ -36,7 +36,7 @@ function Wisdom() {
           </div>
         </div>
 
-        <div className="row" style={{ margin: 0 }}>
+        <div className="row">
           <div className="col-xs-12" style={{ padding: 0 }}>
             {quotes.map((quote, index) => (
               <SpiritualQuote key={index} text={quote.text} author={quote.author} />

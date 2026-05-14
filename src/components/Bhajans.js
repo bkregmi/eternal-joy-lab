@@ -8,7 +8,7 @@ const Bhajans = () => {
       {/* Integrating the AudioPlayer directly prevents the iframe nesting issue */}
       <AudioPlayer category="nepali-bhajans" />
       
-      <div className="container" style={{ maxWidth: '900px', margin: '30px auto', float: 'none' }}>
+      <div className="container-fluid" style={{ padding: '0 20px', marginTop: '20px' }}>
         {bhajans.map((bhajan, index) => (
           <div key={index} className="bhajan-section" style={{ 
             background: '#fff', 
@@ -22,7 +22,7 @@ const Bhajans = () => {
             <h2 style={{ color: '#c92200', textAlign: 'center', fontFamily: "'Georgia', serif", marginBottom: '30px', fontWeight: 'bold' }}>
               {bhajan.title}
             </h2>
-            <div style={{ maxWidth: '700px', margin: '0 auto' }}>
+            <div style={{ width: '100%' }}>
               {bhajan.slokas.map((sloka) => (
                 <div key={sloka.id} className="sloka" style={{ marginBottom: '30px', textAlign: 'center' }}>
                   <div style={{ fontSize: '1.25em', color: '#333', lineHeight: '1.8', marginBottom: '12px' }}>
