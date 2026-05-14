@@ -22,15 +22,15 @@ const SlokaViewer = ({ data, pageTitle }) => {
 
   const pageStyle = {
     backgroundColor: '#fcfaf5',
-    padding: '60px 20px',
+    padding: '5px 15px',
     minHeight: '100vh'
   };
 
   const controlSectionStyle = {
     background: '#fff',
-    padding: '15px',
+    padding: '5px 15px',
     borderRadius: '12px',
-    marginBottom: '30px',
+    marginBottom: '5px',
     boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
     display: 'flex',
     justifyContent: 'center',
@@ -52,11 +52,11 @@ const SlokaViewer = ({ data, pageTitle }) => {
     <div className="sloka-viewer-page" style={pageStyle}>
       <div className="container" style={{ maxWidth: '900px', margin: '0 auto', float: 'none' }}>
         <div className="row" style={{ margin: 0 }}>
-          <div className="col-xs-12 text-center" style={{ marginBottom: '50px', padding: 0 }}>
-            <h1 style={{ color: '#c92200', fontSize: '2.6em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
+          <div className="col-xs-12 text-center" style={{ marginBottom: '2px', padding: 0 }}>
+            <h1 style={{ color: '#c92200', fontSize: '2.2em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '0' }}>
               {pageTitle}
             </h1>
-            <div style={{ width: '100px', height: '4px', background: '#ff9933', margin: '20px auto' }}></div>
+            <div style={{ width: '100px', height: '3px', background: '#ff9933', margin: '5px auto' }}></div>
           </div>
         </div>
 
@@ -78,37 +78,37 @@ const SlokaViewer = ({ data, pageTitle }) => {
               </div>
 
             {data.map((item, index) => (
-              <article key={item.title || index} className="prayer-item" style={{ marginBottom: '40px', border: 'none' }}>
-                <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #ff9933', paddingBottom: '10px', marginBottom: '30px', fontFamily: "'Georgia', serif", fontWeight: 'bold' }}>
+              <article key={item.title || index} className="prayer-item" style={{ marginBottom: '10px', border: 'none' }}>
+                <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #ff9933', paddingBottom: '3px', marginBottom: '8px', fontFamily: "'Georgia', serif", fontWeight: 'bold', fontSize: '1.5em' }}>
                   {item.title}
                 </h2>
                 {item.slokas.map((sloka, sIdx) => (
                   <div key={`${item.title}-sloka-${sloka.id}-${sIdx}`} className="sloka-container" style={{ 
                     background: '#fff',
-                    padding: '35px',
+                    padding: '10px 15px',
                     borderRadius: '15px',
-                    marginBottom: '35px',
-                    boxShadow: '0 10px 25px rgba(0,0,0,0.04)',
+                    marginBottom: '5px',
+                    boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                     fontFamily: "'Georgia', serif",
                     border: 'none', // Removed the internal border
                     borderLeft: '6px solid #ff9933' // Reinstated saffron border
                   }}>
                     {visibility.sanskrit && sloka.sanskrit && (
-                      <div className="sanskrit" style={{ fontSize: '1.4em', color: '#c92200', textAlign: 'center', marginBottom: '15px', lineHeight: '1.8', fontWeight: 'bold' }}>
+                      <div className="sanskrit" style={{ fontSize: '1.1em', color: '#c92200', textAlign: 'center', marginBottom: '3px', lineHeight: '1.4', fontWeight: 'bold' }}>
                         {sloka.sanskrit.map((line, idx) => (
-                          <p key={idx} style={{ margin: '2px 0' }}>{line}</p>
+                          <p key={idx} style={{ margin: '1px 0', fontSize: '1.1em' }}>{line}</p>
                         ))}
                       </div>
                     )}
                     {visibility.english && sloka.english && (
-                      <div className="english" style={{ fontStyle: 'italic', textAlign: 'center', color: '#7f8c8d', marginBottom: '15px', fontSize: '1.1em' }}>
+                      <div className="english" style={{ fontStyle: 'italic', textAlign: 'center', color: '#7f8c8d', marginBottom: '3px', fontSize: '1.0em' }}>
                         {sloka.english.map((line, idx) => (
-                          <p key={idx} style={{ margin: '2px 0' }}>{line}</p>
+                          <p key={idx} style={{ margin: '1px 0', fontSize: '0.95em' }}>{line}</p>
                         ))}
                       </div>
                     )}
                     {visibility.meaning && sloka.meaning && (
-                      <div className="meaning" style={{ borderTop: '1px solid #eee', paddingTop: '15px', color: '#444', lineHeight: '1.6' }}>
+                      <div className="meaning" style={{ borderTop: '1px solid #eee', paddingTop: '3px', color: '#444', lineHeight: '1.4', fontSize: '0.9em' }}>
                         <p><strong style={{ color: '#c92200' }}>Meaning:</strong> {sloka.meaning}</p>
                       </div>
                     )}

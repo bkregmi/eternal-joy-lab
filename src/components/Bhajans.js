@@ -8,7 +8,7 @@ const Bhajans = () => {
       {/* Integrating the AudioPlayer directly prevents the iframe nesting issue */}
       <AudioPlayer category="nepali-bhajans" />
       
-      <div className="container" style={{ marginTop: '30px' }}>
+      <div className="container" style={{ maxWidth: '900px', margin: '30px auto', float: 'none' }}>
         {bhajans.map((bhajan, index) => (
           <div key={index} className="bhajan-section" style={{ 
             background: '#fff', 
