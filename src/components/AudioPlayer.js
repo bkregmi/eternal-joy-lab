@@ -55,14 +55,26 @@ const AudioPlayer = ({ category }) => {
   return (
     <div className="audio-player-page">
       <div className="row">
-        <div className="col-md-12 whiteBG">
-          <div id="player">
+        <div className="col-md-12">
+          <div id="player" style={{ 
+            background: '#fffcf5', 
+            padding: '30px', 
+            borderRadius: '20px', 
+            boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+            border: '1px solid #f0e6d2'
+          }}>
             {category === 'bhagavatam' ? (
-              <h4 className="sh3">Srimad Bhagawatam</h4>
+              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
+                🕉️ Srimad Bhagavatam 🕉️
+              </h1>
             ) : category === 'gita-sanskrit' || category === 'gita' ? (
-              <h1>Srimad Bhagawat Gita(Sanskrit Slokas)</h1>
+              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
+                🕉️ Srimad Bhagawat Gita 🕉️
+              </h1>
             ) : (
-              <h4 className="sh3" style={{ textTransform: 'capitalize' }}>{category.replace(/-/g, ' ')}</h4>
+              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', textTransform: 'capitalize', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
+                {category.replace(/-/g, ' ')}
+              </h1>
             )}
             
             {activeYoutubeId && (
@@ -87,48 +99,73 @@ const AudioPlayer = ({ category }) => {
               </div>
             )}
 
-            <audio 
-              id="audio"
-              ref={audioRef} 
-              controls 
-              autoPlay
-              src={currentTrack?.path}
-              onError={(e) => console.error("Audio Load Error. Tried path:", currentTrack?.path)}
-              onEnded={() => {
-                if (currentTrackIndex < activePlaylist.length - 1) {
-                  playTrack(currentTrackIndex + 1, activePlaylist);
-                }
-              }}
-            >
-              Your browser does not support the audio element.
-            </audio>
+            <div className="now-playing" style={{ 
+              textAlign: 'center', 
+              margin: '20px 0', 
+              padding: '15px', 
+              backgroundColor: '#fff', 
+              borderRadius: '10px', 
+              borderLeft: '5px solid #ff9933',
+              fontFamily: "'Georgia', serif"
+            }}>
+              <div style={{ color: '#777', fontSize: '0.9em', fontStyle: 'italic' }}>Now Chanting:</div>
+              <div style={{ color: '#333', fontSize: '1.3em', fontWeight: 'bold' }}>{currentTrack?.name || 'Select a track'}</div>
+            </div>
+
+            <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+              <audio 
+                id="audio"
+                ref={audioRef} 
+                controls 
+                autoPlay
+                src={currentTrack?.path}
+                style={{ width: '100%', maxWidth: '600px' }}
+                onError={(e) => console.error("Audio Load Error. Tried path:", currentTrack?.path)}
+                onEnded={() => {
+                  if (currentTrackIndex < activePlaylist.length - 1) {
+                    playTrack(currentTrackIndex + 1, activePlaylist);
+                  }
+                }}
+              >
+                Your browser does not support the audio element.
+              </audio>
+            </div>
             
-            <div className="controls">
-              <button id="first" className="myButton" onClick={() => playTrack(0, allTracks)}>&lt;&lt;</button>
-              <button id="prev" className="myButton" onClick={() => playTrack(Math.max(0, currentTrackIndex - 1), activePlaylist)}>&lt;</button>
-              <button id="next" className="myButton" onClick={() => playTrack(Math.min(activePlaylist.length - 1, currentTrackIndex + 1), activePlaylist)}>&gt;</button>
-              <button id="last" className="myButton" onClick={() => playTrack(allTracks.length - 1, allTracks)}>&gt;&gt;</button>
-              <button id="allSongs" className="myButton" onClick={() => playTrack(0, allTracks)}>Play All</button>
-              <button id="selectedSongs" className="myButton" onClick={() => playTrack(0, selectedTracks)} disabled={selectedTracks.length === 0}>Play Selected</button>
+            <div className="controls" style={{ textAlign: 'center', marginBottom: '30px' }}>
+              <style>{`
+                .player-btn { background: #ff9933; color: white; border: none; padding: 10px 20px; margin: 5px; border-radius: 25px; cursor: pointer; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+                .player-btn:hover { background: #e68a00; transform: translateY(-2px); box-shadow: 0 6px 12px rgba(0,0,0,0.15); }
+                .player-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; box-shadow: none; }
+                .track-row { padding: 10px; border-radius: 8px; transition: background 0.2s; border-bottom: 1px solid #f9f4e8; display: flex; align-items: center; }
+                .track-row:hover { background: #fff5e6; }
+                .track-row.active { background: #ffefe0; border-left: 4px solid #ff9933; }
+              `}</style>
+              <button id="first" className="player-btn" onClick={() => playTrack(0, allTracks)}>&lt;&lt;</button>
+              <button id="prev" className="player-btn" onClick={() => playTrack(Math.max(0, currentTrackIndex - 1), activePlaylist)}>&lt;</button>
+              <button id="next" className="player-btn" onClick={() => playTrack(Math.min(activePlaylist.length - 1, currentTrackIndex + 1), activePlaylist)}>&gt;</button>
+              <button id="last" className="player-btn" onClick={() => playTrack(allTracks.length - 1, allTracks)}>&gt;&gt;</button>
+              <button id="allSongs" className="player-btn" onClick={() => playTrack(0, allTracks)}>Play All</button>
+              <button id="selectedSongs" className="player-btn" onClick={() => playTrack(0, selectedTracks)} disabled={selectedTracks.length === 0}>Play Selected</button>
             </div>
 
             <div id="songs">
-              <button id="showSongs" className="myButton" style={{ display: showPlaylist ? 'none' : 'inline-block' }} onClick={() => setShowPlaylist(true)}>
+              <button className="player-btn" style={{ display: showPlaylist ? 'none' : 'inline-block', marginBottom: '15px' }} onClick={() => setShowPlaylist(true)}>
                 Show Songs
               </button>
-              <button id="hideSongs" className="myButton" style={{ display: showPlaylist ? 'inline-block' : 'none' }} onClick={() => setShowPlaylist(false)}>
+              <button className="player-btn" style={{ display: showPlaylist ? 'inline-block' : 'none', marginBottom: '15px' }} onClick={() => setShowPlaylist(false)}>
                 Hide Songs
               </button>
 
               <div id="playlist1" style={{ display: showPlaylist ? 'block' : 'none' }}>
                 {category === 'bhagavatam' ? (
                   rawData.map((group, gIdx) => (
-                    <span key={gIdx} className="mp3">
-                      <h2>{group.group}</h2>
+                    <div key={gIdx} className="mp3-group" style={{ marginBottom: '20px' }}>
+                      <h2 style={{ color: '#8b4513', fontSize: '1.2em', borderBottom: '1px solid #ddd', paddingBottom: '5px', marginBottom: '10px' }}>{group.group}</h2>
                       {group.tracks.map((track, tIdx) => (
-                        <div key={tIdx}>
+                        <div key={tIdx} className={`track-row ${currentTrack?.path === track.path ? 'active' : ''}`}>
                           <input 
                             type="checkbox" 
+                            style={{ marginRight: '10px' }}
                             value={track.path}
                             checked={selectedTracks.some(t => t.path === track.path)}
                             onChange={() => handleCheckboxChange(track)}
@@ -141,18 +178,20 @@ const AudioPlayer = ({ category }) => {
                             }}
                             onClick={() => playTrack(allTracks.findIndex(t => t.path === track.path), allTracks)}
                           >
+                            {currentTrack?.path === track.path && <span style={{ marginRight: '8px' }}>🪔</span>}
                             {track.name}
                           </span>
                         </div>
                       ))}
-                    </span>
+                    </div>
                   ))
                 ) : (
-                  <span className="mp3">
+                  <div className="mp3-list">
                     {allTracks.map((track, index) => (
-                      <div key={index}>
+                      <div key={index} className={`track-row ${currentTrack?.path === track.path ? 'active' : ''}`}>
                         <input 
                           type="checkbox" 
+                          style={{ marginRight: '10px' }}
                           value={track.path}
                           checked={selectedTracks.some(t => t.path === track.path)}
                           onChange={() => handleCheckboxChange(track)}
@@ -160,29 +199,29 @@ const AudioPlayer = ({ category }) => {
                         <span 
                           style={{ 
                             cursor: 'pointer', 
-                            fontWeight: currentTrack?.path === track.path ? 'bold' : 'normal',
-                            color: currentTrack?.path === track.path ? '#c92200' : 'inherit'
+                            fontWeight: currentTrack?.path === track.path ? 'bold' : 'normal'
                           }}
                           onClick={() => playTrack(index, allTracks)}
                         >
+                          {currentTrack?.path === track.path && <span style={{ marginRight: '8px' }}>🪔</span>}
                           {track.name}
-                          {track.youtubeLink && (
-                            <button 
-                              className="btn btn-link btn-xs"
-                              style={{ color: '#FF0000', textDecoration: 'none', marginLeft: '10px', padding: 0 }}
-                              onClick={(e) => {
-                                e.stopPropagation();
-                                if (audioRef.current) audioRef.current.pause();
-                                setActiveYoutubeId(getYoutubeId(track.youtubeLink));
-                              }}
-                            >
-                              &#x25BA; Watch
-                            </button>
-                          )}
                         </span>
+                        {track.youtubeLink && (
+                          <button 
+                            className="btn btn-link btn-xs"
+                            style={{ color: '#FF0000', textDecoration: 'none', marginLeft: 'auto', padding: 0 }}
+                            onClick={(e) => {
+                              e.stopPropagation();
+                              if (audioRef.current) audioRef.current.pause();
+                              setActiveYoutubeId(getYoutubeId(track.youtubeLink));
+                            }}
+                          >
+                            &#x25BA; Watch
+                          </button>
+                        )}
                       </div>
                     ))}
-                  </span>
+                  </div>
                 )}
               </div>
             </div>

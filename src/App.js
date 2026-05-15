@@ -24,7 +24,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
-      <header className="app-header"><h1>Eternal Joy Lab</h1></header>
+      <header className="app-header"><h1>Eternal Bliss Lab (EBL)</h1></header>
       <Menu />
 
       <main>
