@@ -46,13 +46,8 @@ const Menu = () => {
                 Swadhaya <span className="caret"></span>
               </a>
               <ul className="dropdown-menu">
-                <li className="dropdown-header">Srimad Bhagawat Gita</li>
-                <li><Link to="/gita-verses" onClick={closeAll}>Selected Verses</Link></li>
-                <li><Link to="/gita-audio" onClick={closeAll}>Audio (Sanskrit)</Link></li>
-                <li className="divider"></li>
-                <li className="dropdown-header">Srimad Bhagavatam</li>
-                <li><Link to="/bhagavatam-verses" onClick={closeAll}>Verses & Prayers</Link></li>
-                <li><Link to="/bhagavatam-audio" onClick={closeAll}>Audio (Skandhas)</Link></li>
+                <li><Link to="/scripture-verses" onClick={closeAll}>Scripture Verses</Link></li>
+                <li><Link to="/scripture-audio" onClick={closeAll}>Scripture Audio</Link></li>
               </ul>
             </li>
 

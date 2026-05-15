@@ -1,0 +1,523 @@
+[
+  {
+    "title": "Hanuman Chalisa (हनुमान चालीसा)",
+    "slokas": [
+      {
+        "id": 1,
+        "sanskrit": [
+          "श्रीगुरु चरण् सरोजरज, निजमनमुकुर सुधार ।",
+          "बरणौ रघुबर बिमल यश, जो दायक फलचार ॥"
+        ],
+        "english": [
+          "Shrii-Guru Carann Saroja-Raja, Nija-Mana-Mukura Sudhaara |",
+          "Barannau Raghu-Bara Bimala Yasha, Jo Daayaka Phala-Caara ||"
+        ],
+        "meaning": "After purifying the mirror of my mind with the dust from the lotus feet of my guru, let me describe the shining, untainted glory of Lord Hanuman, a member of the Raghu dynasty, one who is capable of bestowing the four purushārthas on his devotees."
+      },
+      {
+        "id": 2,
+        "sanskrit": [
+          "बुद्धिहीन तनु जानिके, सुमिरौं पवन कुमार ।",
+          "बल बुद्धिविद्या देहु मोहिं, हरहु कलेश विकार ॥"
+        ],
+        "english": [
+          "Buddhi-Hiina Tanu Jaanike, Sumirau Pavan Kumaar |",
+          "Bala Buddhi-Vidyaa Dehu Mohi, Harahu Kalesha Vikaar ||"
+        ],
+        "meaning": "Knowing myself to be ignorant, lacking in intelligence and wisdom, I remember Hanumanji, the son of Pavana (the wind god) and invoke His grace to forcibly remove all the afflictions of my body and impurities of my mind and bless me with strength, wisdom, and discriminative knowledge."
+      },
+      {
+        "id": 3,
+        "sanskrit": [
+          "जय हनुमान ज्ञान गुण सागर ।",
+          "जै कपीस तिहुँलोक उजागर ॥"
+        ],
+        "english": [
+          "Jay Hanumaan Jnaan Gunn Saagar |",
+          "Jai Kapiis Tihu-Lok Ujaagar ||"
+        ],
+        "meaning": "Glory to Lord Hanuman who is the boundless ocean of knowledge and virtues. Glory to Lord Hanuman who is the king of the monkeys and the light of whose fame illumines the three worlds."
+      },
+      {
+        "id": 4,
+        "sanskrit": [
+          "रामदूत अतुलित बलधामा ।",
+          "अंजनि-पुत्र पवन-सुत नामा ॥"
+        ],
+        "english": [
+          "Raama-Duut Atulit Bala-Dhaamaa |",
+          "Anjani-Putra Pavan-Sut Naamaa ||"
+        ],
+        "meaning": "O Lord Hanuman! You are the messenger of Lord Rama, the abode of incomparable strength, the son of Anjani, and known also by the name Pavanasuta (son of wind god)."
+      },
+      {
+        "id": 5,
+        "sanskrit": [
+          "महाबीर बिक्रम बजरंगी ।",
+          "कुमति निवार सुमति के संगी ॥"
+        ],
+        "english": [
+          "Mahaa-biir Bikrama Bajarangii |",
+          "Kumati Nivaar Sumati Ke Sangii ||"
+        ],
+        "meaning": "You are the greatest warrior, possessed of valor with a body that is as strong as steel. You have the power to destroy all the negative tendencies of the mind and You are the constant companion of those who are discriminating and wise."
+      },
+      {
+        "id": 6,
+        "sanskrit": [
+          "कंचन बरण बिराज सुबेशा ।",
+          "कानन कुंडल कुंचित केशा ॥"
+        ],
+        "english": [
+          "Kancan Barann Biraaj Subeshaa |",
+          "Kaanan Kunddala Kuncita Keshaa ||"
+        ],
+        "meaning": "Your complexion has a golden glow and your appearance is enhanced by your beautiful clothes, earrings and curly hair."
+      },
+      {
+        "id": 7,
+        "sanskrit": [
+          "हाथ बज्र औ ध्वजा बिराजै ।",
+          "काँधे मूँज जनेऊ साजै ॥"
+        ],
+        "english": [
+          "Haath Bajra Au Dhvajaa Biraajai |",
+          "Kaandhe Muuj Janeuu Saajai ||"
+        ],
+        "meaning": "You have a thunderbolt in one hand and the flag of Lord Rama in the other. The sacred thread made of munja grass on your shoulder adorns you."
+      },
+      {
+        "id": 8,
+        "sanskrit": [
+          "शंकर-सुवन केशरी-नन्दन ।",
+          "तेज प्रताप महा जग-वंदन ॥"
+        ],
+        "english": [
+          "Shankar-Suvan Kesharii-Nandan |",
+          "Teja Prataap Mahaa Jag-Vandan ||"
+        ],
+        "meaning": "You are the incarnation of Lord Siva and the son of Kesari. The whole world sings the glories of your shining prowess and valor."
+      },
+      {
+        "id": 9,
+        "sanskrit": [
+          "विद्यावान गुणी अति चातुर ।",
+          "राम काज करिबे को आतुर ॥"
+        ],
+        "english": [
+          "Vidyaavaan Gunnii Ati Caatur |",
+          "Raam Kaaj Karibe Ko Aatur ||"
+        ],
+        "meaning": "You are possessed of knowledge, great virtues, a sharp intellect, and are ever eager to serve the lord of your heart, Rama."
+      },
+      {
+        "id": 10,
+        "sanskrit": [
+          "प्रभु चरित्र सुनिबे को रसिया ।",
+          "रामलषण सीता मन बसिया ॥"
+        ],
+        "english": [
+          "Prabhu Caritra Sunibe Ko Rasiyaa |",
+          "Raamalassann Siitaa Man Basiyaa ||"
+        ],
+        "meaning": "You take great delight in listening to the glories of Lord Rama, who along with Mother Sita and Lakshmana have take up permanent residence in Your heart."
+      },
+      {
+        "id": 11,
+        "sanskrit": [
+          "सूक्ष्म रूपधरि सियहिं दिखावा ।",
+          "विकट रूप धरि लंक जरावा ॥"
+        ],
+        "english": [
+          "Suukssma Ruupadhari Siyahi Dikhaavaa |",
+          "Vikatt Ruup Dhari Lamka Jaraavaa ||"
+        ],
+        "meaning": "Having reached Lanka, You assumed the most minute form and appeared before Mother Sita. With her permission, You then assumed a huge, fierce form and burnt the city of Lanka."
+      },
+      {
+        "id": 12,
+        "sanskrit": [
+          "भीम रूप धरि असुर सँहारे ।",
+          "रामचन्द्र के काज सँवारे ॥"
+        ],
+        "english": [
+          "Bhiim Ruup Dhari Asur Samhaare |",
+          "Raamacandra Ke Kaaj Samvaare ||"
+        ],
+        "meaning": "In order to accomplish the mission of Lord Rama, You took a gigantic form and slew many demons in Lanka."
+      },
+      {
+        "id": 13,
+        "sanskrit": [
+          "लाय सजीवन लखन जियाये ।",
+          "श्री रघुबीर हरषि उर लाये ॥"
+        ],
+        "english": [
+          "Laay Sajiivan Lakhan Jiyaaye |",
+          "Shrii Raghubiir Harassi Ur Laaye ||"
+        ],
+        "meaning": "You brought the sanjīvani plant from the Himalayas, which revived Lakshman thereby bringing great joy to Lord Rama’s heart."
+      },
+      {
+        "id": 14,
+        "sanskrit": [
+          "रघुपति कीन्ही बहुत बडाई ।",
+          "तुम मम प्रिय भरतहिसम भाई ॥"
+        ],
+        "english": [
+          "Raghupati Kiinhii Bahut Baddaaii |",
+          "Tum Mam Priya Bharatahisam Bhaaii ||"
+        ],
+        "meaning": "Sri Rama Praised You Greatly, And said: 'You are as dear to me as my brother Bharata'."
+      },
+      {
+        "id": 15,
+        "sanskrit": [
+          "सहस बदन तुम्हरो यश गावैं ।",
+          "अस कहि श्रीपति कण्ठ लगावैं ॥"
+        ],
+        "english": [
+          "Sahas Badan Tumharo Yash Gaavai |",
+          "As Kahi Shriipati Kanntth Lagaavai ||"
+        ],
+        "meaning": "“The thousand-headed snake (sheshanaga) sings Your glories”, thus saying Lord Rama, the divine consort of Mother Sita, embraced Hanuman. This also refers to Lakshmana who is considered an incarnation of shesha."
+      },
+      {
+        "id": 16,
+        "sanskrit": [
+          "सनकादिक ब्रह्मादि मुनीशा ।",
+          "नारद शारद सहित अहीशा ॥"
+        ],
+        "english": [
+          "Sanakaadik Brahmaadi Muniishaa |",
+          "Naarad Shaarad Sahit Ahiishaa ||"
+        ],
+        "meaning": "Your glories are also sung by great sages like Sanaka and Nārada, gods and goddesses like Brahmā and Sarasvati."
+      },
+      {
+        "id": 17,
+        "sanskrit": [
+          "यम कुबेर दिगपाल जहाँते ।",
+          "कवि कोविद कहि सकैं कहाँते ॥"
+        ],
+        "english": [
+          "Yam Kuber Digapaal Jahaate |",
+          "Kavi Kovid Kahi Sakai Kahaate ||"
+        ],
+        "meaning": "Yama (god of death), Kubera (god of wealth), Digpalas (the guardian deities), Poets and Scholars have not been able to Describe Your Glories in full."
+      },
+      {
+        "id": 18,
+        "sanskrit": [
+          "तुम उपकार सुग्रीवहिं कीन्हा ।",
+          "राम मिलाय राजपद दीन्हा ॥"
+        ],
+        "english": [
+          "Tum Upakaar Sugriivahi Kiinhaa |",
+          "Raam Milaay Raajapad Diinhaa ||"
+        ],
+        "meaning": "You Rendered a great Help to Sugriva. You introduced him to Sri Rama and thereby Gave back his Kingdom."
+      },
+      {
+        "id": 19,
+        "sanskrit": [
+          "तुम्हरो मंत्र विभीषण माना ।",
+          "लंकेश्वर भये सब जग जाना ॥"
+        ],
+        "english": [
+          "Tumharo Mamtra Vibhiissann Maanaa |",
+          "Lamkeshvar Bhaye Sab Jag Jaanaa ||"
+        ],
+        "meaning": "Vibhisana Followed your Advice, And the Whole World Knows that he became the King of Lanka."
+      },
+      {
+        "id": 20,
+        "sanskrit": [
+          "युग सहस्र योजन पर भानू ।",
+          "लील्यो ताहि मधुर फल जानू ॥"
+        ],
+        "english": [
+          "Yuga Sahasra Yojana Para Bhaanuu |",
+          "Liilyo Taahi Madhura Phala Jaanuu ||"
+        ],
+        "meaning": "As a child You leaped up thousands of miles with ease and swallowed the Sun thinking him to be a sweet fruit."
+      },
+      {
+        "id": 21,
+        "sanskrit": [
+          "प्रभु मुद्रिका मेलि मुख माहीं ।",
+          "जलधि लाँधि गये अचरजनाहीं ॥"
+        ],
+        "english": [
+          "Prabhu Mudrikaa Meli Mukh Maahii |",
+          "Jaladhi Laadhi Gaye Acarajanaahii ||"
+        ],
+        "meaning": "Therefore it is not a subject of wonderment that You flew over and crossed the ocean with Lord Rama’s ring in Your mouth."
+      },
+      {
+        "id": 22,
+        "sanskrit": [
+          "दुर्गम काज जगत के जेते ।",
+          "सुगम अनुग्रह तुम्हरे तेते ॥"
+        ],
+        "english": [
+          "Durgam Kaaja Jagat Ke Jete |",
+          "Sugam Anugrah Tumhare Tete ||"
+        ],
+        "meaning": "All the tasks of the world, regardless of the level of difficulty, are accomplished easily by Your grace."
+      },
+      {
+        "id": 23,
+        "sanskrit": [
+          "राम दुआरे तुम रखवारे ।",
+          "होत न आज्ञा बिन पैसारे ॥"
+        ],
+        "english": [
+          "Raam Duaare Tum Rakhavaare |",
+          "Hot Na Aajnyaa Bin Paisaare ||"
+        ],
+        "meaning": "You guard the entry to Ramji’s palace where none can enter without Your permission."
+      },
+      {
+        "id": 24,
+        "sanskrit": [
+          "सब सुख लहै तुम्हारी सरना ।",
+          "तुम रक्षक काहू को डरना ॥"
+        ],
+        "english": [
+          "Sab Sukha Lahai Tumhaarii Saranaa |",
+          "Tum Rakssak Kaahuu Ko Ddaranaa ||"
+        ],
+        "meaning": "Those who take Refuge in You enjoy all Happiness. If You are the Protector, what is there to Fear?"
+      },
+      {
+        "id": 25,
+        "sanskrit": [
+          "आपन तेज सम्हारो आपै ।",
+          "तीनों लोक हाँकते काँपै ॥"
+        ],
+        "english": [
+          "Aapan Tej Samhaaro Aapai |",
+          "Tiino Lok Haakate Kaapai ||"
+        ],
+        "meaning": "You alone are capable of controlling the blazing splendor of Your powers. The three worlds tremble with fear when they hear Your thunderous roar."
+      },
+      {
+        "id": 26,
+        "sanskrit": [
+          "भूत पिशाच निकट नहिं आवै ।",
+          "महाबीर जब नाम सुनावै ॥"
+        ],
+        "english": [
+          "Bhuut Pishaaca Nikatt Nahi Aavai |",
+          "Mahaabiir Jab Naam Sunaavai ||"
+        ],
+        "meaning": "Ghosts and Evil Spirits will Not Come Near, When one Utters the Name of Mahavir (Hanuman)."
+      },
+      {
+        "id": 27,
+        "sanskrit": [
+          "नाशौ रोग हरै सब पीरा ।",
+          "जपत निरन्तर हनुमत बीरा ॥"
+        ],
+        "english": [
+          "Naashau Rog Harai Sab Piiraa |",
+          "Japat Nirantar Hanumat Biiraa ||"
+        ],
+        "meaning": "You remove all the difficulties of those who meditate on You in thought, deed and speech with sincerity and faith."
+      },
+      {
+        "id": 28,
+        "sanskrit": [
+          "संकट से हनुमान छुडावै ।",
+          "मन क्रम बचन ध्यान जो लावै ॥"
+        ],
+        "english": [
+          "Samkatt Se Hanumaan Chuddaavai |",
+          "Man Kram Bacan Dhyaan Jo Laavai ||"
+        ],
+        "meaning": "Hanuman Frees one from Difficulties, When one Meditates on Him with Mind, Deed and Words."
+      },
+      {
+        "id": 29,
+        "sanskrit": [
+          "सब पर राम तपस्वी राजा ।",
+          "तिनके काज सकल तुम साजा ॥"
+        ],
+        "english": [
+          "Sab Par Raam Tapasvii Raajaa |",
+          "Tinake Kaaj Sakal Tum Saajaa ||"
+        ],
+        "meaning": "Sri Rama is the King of the Tapaswis (devotees engaged in penances). And You (Hanuman) Fulfill all Works of Sri Rama (as a caretaker)."
+      },
+      {
+        "id": 30,
+        "sanskrit": [
+          "और मनोरथ जो कोइ लावै ।",
+          "सोइ अमित जीवन फल पावै ॥"
+        ],
+        "english": [
+          "Aur Manorath Jo Koi Laavai |",
+          "Soi Amit Jiivan Phal Paavai ||"
+        ],
+        "meaning": "Devotees who have any Other Desires, Will ultimately get the Highest Fruit of Life."
+      },
+      {
+        "id": 31,
+        "sanskrit": [
+          "चारों युग परताप तुम्हारा ।",
+          "है परसिद्ध जगत उजियारा ॥"
+        ],
+        "english": [
+          "Caaro Yug Parataap Tumhaaraa |",
+          "Hai Parasiddh Jagat Ujiyaaraa ||"
+        ],
+        "meaning": "Your Glory prevails in all the Four Ages. And your Fame Radiates throughout the World."
+      },
+      {
+        "id": 32,
+        "sanskrit": [
+          "साधु संत के तुम रखवारे ।",
+          "असुर निकंदन राम दुलारे ॥"
+        ],
+        "english": [
+          "Saadhu Sant Ke Tum Rakhavaare |",
+          "Asur Nikandan Raam Dulaare ||"
+        ],
+        "meaning": "You are the Saviour of the Saints and Sages. You Destroy the Demons, O Beloved of Sri Rama."
+      },
+      {
+        "id": 33,
+        "sanskrit": [
+          "अष्टसिद्धि नव निधि के दाता ।",
+          "अस बर दीन जानकी माता ॥"
+        ],
+        "english": [
+          "Assttasiddhi Nava Nidhi Ke Daataa |",
+          "As Bar Diin Jaanakii Maataa ||"
+        ],
+        "meaning": "You can Give the Eight Siddhis (supernatural powers) and Nine Nidhis (types of devotions). Mother Janaki (Devi Sita) gave this Boon to you."
+      },
+      {
+        "id": 34,
+        "sanskrit": [
+          "राम रसायन तुम्हरे पासा ।",
+          "सदा रहो रघुपति के दासा ॥"
+        ],
+        "english": [
+          "Raam Rasaayan Tumhare Paasaa |",
+          "Sadaa Raho Raghupati Ke Daasaa ||"
+        ],
+        "meaning": "You hold the Essence of Devotion to Sri Rama. You Always Remain as the Servant of Raghupati (Sri Rama)."
+      },
+      {
+        "id": 35,
+        "sanskrit": [
+          "तुम्हरे भजन रामको पावै ।",
+          "जन्म जन्म के दुख बिसरावै ॥"
+        ],
+        "english": [
+          "Tumhare Bhajan Raamako Paavai |",
+          "Janma Janma Ke Dukh Bisaraavai ||"
+        ],
+        "meaning": "Through Devotion to You, one gets Sri Rama, Thereby getting Free of the Sorrows of Life after Life."
+      },
+      {
+        "id": 36,
+        "sanskrit": [
+          "अन्त काल रघुपति पुर जाई ।",
+          "जहाँ जन्म हरिभक्त कहाई ॥"
+        ],
+        "english": [
+          "Anta Kaal Raghupati Pur Jaaii |",
+          "Jahaa Janma Hari-Bhakta Kahaaii ||"
+        ],
+        "meaning": "At the End one Goes to the Abode of Raghupati (Sri Rama). Where one is Known as the Devotee of Hari."
+      },
+      {
+        "id": 37,
+        "sanskrit": [
+          "और देवता चित्त न धरई ।",
+          "हनुमत सेइ सर्व सुख करई ॥"
+        ],
+        "english": [
+          "Aur Devataa Citta Na Dharaii |",
+          "Hanumat Sei Sarva Sukh Karaii ||"
+        ],
+        "meaning": "Even without Worshipping any Other Deities, One Gets All Happiness who Worships Sri Hanuman."
+      },
+      {
+        "id": 38,
+        "sanskrit": [
+          "संकट हरै मिटै सब पीरा ।",
+          "जो सुमिरै हनुमत बल बीरा ॥"
+        ],
+        "english": [
+          "Sankatta Harai Mittai Sab Piiraa |",
+          "Jo Sumirai Hanumat Bala Biiraa ||"
+        ],
+        "meaning": "Difficulties Disappear and Sorrows are Removed, For Those who Contemplate on the Powerful Sri Hanuman."
+      },
+      {
+        "id": 39,
+        "sanskrit": [
+          "जै जै जै हनुमान गोसाई ।",
+          "कृपा करहु गुरुदेव की नाई ॥"
+        ],
+        "english": [
+          "Jai Jai Jai Hanumaan Gosaaii |",
+          "Krpaa Karahu Gurudev Kii Naaii ||"
+        ],
+        "meaning": "Victory, Victory, Victory to You, O Hanuman, Please Bestow your Grace as our Supreme Guru."
+      },
+      {
+        "id": 40,
+        "sanskrit": [
+          "जोह शत बार पाठ कर जोई ।",
+          "छुटहि बन्दि महासुख होई ॥"
+        ],
+        "english": [
+          "Joh Shat Baar Paattha Kar Joii |",
+          "Chuttahi Bandi Mahaasukh Hoii ||"
+        ],
+        "meaning": "Those who Recite this Hanuman Chalisa one hundred times (with devotion), Will get Freed from Worldly Bondage and get Great Happiness."
+      },
+      {
+        "id": 41,
+        "sanskrit": [
+          "जो यह पढै हनुमान चालीसा ।",
+          "होय सिद्धि साखी गौरीसा ॥"
+        ],
+        "english": [
+          "Jo Yah Paddhai Hanumaan Caaliisaa |",
+          "Hoy Siddhi Saakhii Gauriisaa ||"
+        ],
+        "meaning": "Those who Read the Hanuman Chalisa (with devotion), Will become Perfect, Lord Shiva is the Witness."
+      },
+      {
+        "id": 42,
+        "sanskrit": [
+          "तुलसीदास सदा हरि चेरा ।",
+          "कीजै नाथ हृदय महँ डेरा ॥"
+        ],
+        "english": [
+          "Tulasiidaas Sadaa Hari Ceraa |",
+          "Kiijai Naatha Hrday Mah Dderaa ||"
+        ],
+        "meaning": "Tulsidas who is Always the Servant of Hari. Prays the Lord to Reside in his Heart."
+      },
+      {
+        "id": 43,
+        "sanskrit": [
+          "पवनतनय संकट हरन, मंगल मूरति रूप |",
+          "रामलषन सीता सहित, हृदय बसहु सुरभूप ॥"
+        ],
+        "english": [
+          "Pavanatanaya Samkatt Harana, Mamgal Muurati Ruup |",
+          "Raamalassan Siitaa Sahit, Hrday Basahu Surabhuup ||"
+        ],
+        "meaning": "Sri Hanuman, who is the Son of Pavana, who Removes Difficulties, Who has an Auspicious Form, With Sri Rama, Sri Lakshmana and Devi Sita, Please Dwell in my Heart."
+      }
+    ]
+  }
+]

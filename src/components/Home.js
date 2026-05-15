@@ -92,6 +92,55 @@ function Home() {
           <p style={{ fontSize: '1.2em' }}>"When these four pillars are balanced, life becomes a lab for eternal joy."</p>
         </div>
       </section>
+
+      <section className="inspirations-section whiteBG" style={{ 
+        padding: '40px', 
+        borderRadius: '20px', 
+        boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
+        marginBottom: '40px'
+      }}>
+        <h2 className="text-center" style={{ color: '#c92200', marginBottom: '30px', fontFamily: "'Georgia', serif", fontWeight: 'bold' }}>Spiritual Inspirations</h2>
+        <p className="text-center" style={{ color: '#555', marginBottom: '30px', fontSize: '1.1em' }}>
+          Humbly acknowledging the divine souls and masters whose teachings and presence illuminate the path of evolution.
+        </p>
+        <div className="row">
+          {[
+            "Jagad Guru Sri Kripalu Ji Maharaj",
+            "Sadhguru Jaggi Vasudev",
+            "Sri Sri Ravi Shankar",
+            "Sri Ramakrishna Paramahansa",
+            "Osho",
+            "Swami Vivekananda",
+            "Sri Hanuman Prasad Poddar",
+            "Sri Nisargadatta Maharaj",
+            "Thich Nhat Hanh",
+            "Eckhart Tolle",
+            "Ramana Maharshi",
+            "Swami Chinmayananda",
+            "Joseph Benner",
+            "Sri Premanand Ji Maharaj"
+          ].map((name, idx) => (
+            <div key={idx} className="col-xs-12 col-sm-6 col-md-4" style={{ marginBottom: '15px' }}>
+              <div style={{ 
+                padding: '15px', 
+                background: '#fff', 
+                borderLeft: '4px solid #ff9933',
+                borderRadius: '10px',
+                boxShadow: '0 2px 8px rgba(0,0,0,0.03)',
+                fontWeight: 'bold',
+                color: '#2c3e50',
+                textAlign: 'center',
+                minHeight: '60px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}>
+                {name}
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
     </div>
   );
 }

@@ -18,8 +18,14 @@ const AudioPlayer = ({ category }) => {
 
   // Handle nested structure for Bhagavatam vs flat for Gita
   const rawData = trackData[category] || [];
+  
+  // Dynamically check if data is grouped (like Bhagavatam) or flat (like Gita)
+  const isGrouped = useMemo(() => {
+    return rawData.length > 0 && rawData[0].group && Array.isArray(rawData[0].tracks);
+  }, [rawData]);
+
   const allTracks = useMemo(() => {
-    return category === 'bhagavatam' 
+    return isGrouped 
       ? rawData.flatMap(group => group.tracks) 
       : rawData;
   }, [category, rawData]);
@@ -63,19 +69,9 @@ const AudioPlayer = ({ category }) => {
             boxShadow: '0 10px 30px rgba(0,0,0,0.05)',
             border: '1px solid #f0e6d2'
           }}>
-            {category === 'bhagavatam' ? (
-              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
-                🕉️ Srimad Bhagavatam 🕉️
-              </h1>
-            ) : category === 'gita-sanskrit' || category === 'gita' ? (
-              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
-                🕉️ Srimad Bhagawat Gita 🕉️
-              </h1>
-            ) : (
-              <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', textTransform: 'capitalize', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
-                {category.replace(/-/g, ' ')}
-              </h1>
-            )}
+            <h1 style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', textAlign: 'center', textTransform: 'capitalize', borderBottom: '2px solid #ff9933', paddingBottom: '15px' }}>
+              🕉️ {category.replace(/-/g, ' ')} 🕉️
+            </h1>
             
             {activeYoutubeId && (
               <div className="youtube-container" style={{ marginBottom: '20px', textAlign: 'center' }}>
@@ -157,7 +153,7 @@ const AudioPlayer = ({ category }) => {
               </button>
 
               <div id="playlist1" style={{ display: showPlaylist ? 'block' : 'none' }}>
-                {category === 'bhagavatam' ? (
+                {isGrouped ? (
                   rawData.map((group, gIdx) => (
                     <div key={gIdx} className="mp3-group" style={{ marginBottom: '20px' }}>
                       <h2 style={{ color: '#8b4513', fontSize: '1.2em', borderBottom: '1px solid #ddd', paddingBottom: '5px', marginBottom: '10px' }}>{group.group}</h2>
