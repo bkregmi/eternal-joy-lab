@@ -32,7 +32,8 @@ const Menu = () => {
                 Sadhana <span className="caret"></span>
               </a>
               <ul className="dropdown-menu">
-                <li><Link to="/prayers" onClick={closeAll}>Daily Prayers</Link></li>
+                <li><Link to="/blissful-stuties" onClick={closeAll}>Blissful Stuties</Link></li>
+                <li><Link to="/prayers" onClick={closeAll}>Daily Prayer</Link></li>
                 <li><Link to="/pranayama" onClick={closeAll}>Pranayama</Link></li>
                 <li><Link to="/yogasana" onClick={closeAll}>Yogasana</Link></li>
                 <li><Link to="/personal-audio" onClick={closeAll}>Personal Audio</Link></li>

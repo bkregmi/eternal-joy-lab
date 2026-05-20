@@ -1,0 +1,29 @@
+{
+  "blissful-stuties": [
+    {
+      "group": "Sri Krishna Lahari Stotram",
+      "tracks": [
+        {
+          "name": "Kasturi Tilakam",
+          "path": "/media/audio/personal/stuti_kasturi-tilakam01_ejl.m4a"
+        },
+        {
+          "name": "Blissful Stuti 1 - Remote",
+          "path": "https://example.com/blissful-stuti-1.mp3"
+        }
+      ]
+    }
+  ],
+  "personal": [
+    {
+      "name": "Remote Personal Bhajan - Example",
+      "path": "https://example.com/remote-audio.mp3"
+    }
+  ],
+  "nepali-bhajans": [
+    {
+      "name": "Online Nepali Bhajan",
+      "path": "https://bhajan-cdn.com/track-01.mp3"
+    }
+  ]
+}

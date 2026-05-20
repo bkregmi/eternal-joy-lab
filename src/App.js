@@ -1,3 +1,4 @@
+import BlissfulStuties from './components/BlissfulStuties';
 import { Routes, Route, NavLink } from 'react-router-dom';
 import Home from './components/Home';
 import Menu from './components/Menu';
@@ -42,6 +43,7 @@ function App() {
           <Route path="/devas" element={<SlokaViewer data={suryastakam} pageTitle="Devi/Devata Prayers" />} />
           <Route path="/wisdom" element={<Wisdom />} />
           <Route path="/view/:loc/:doc/:type" element={<DocViewer />} />
+          <Route path="/blissful-stuties" element={<BlissfulStuties />} />
         </Routes>
       </main>
       <Footer />
