@@ -22,7 +22,7 @@ const Menu = () => {
             <span className="icon-bar"></span>
             <span className="icon-bar"></span>
           </button>
-          <Link className="navbar-brand" to="/" onClick={closeAll}>Eternal Joy Lab</Link>
+          <Link className="navbar-brand" to="/" onClick={closeAll}>Eternal Bliss Lab</Link>
         </div>
         <div className={`collapse navbar-collapse ${isNavCollapsed ? '' : 'in'}`} id="myNavbar">
           <ul className="nav navbar-nav">

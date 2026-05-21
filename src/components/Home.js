@@ -78,7 +78,7 @@ function Home() {
       <section className="philosophy-section whiteBG" style={{ padding: '40px', borderRadius: '20px', marginBottom: '40px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
         <h1 className="text-center" style={{ color: '#c92200', marginBottom: '15px', fontFamily: "'Georgia', serif", fontWeight: 'bold' }}>The SSSS Philosophy</h1>
         <p className="lead text-center" style={{ fontSize: '1.25em', color: '#555', maxWidth: '800px', margin: '0 auto 40px auto' }}>
-          At Eternal Joy Lab, we follow a holistic roadmap for spiritual evolution known as the <strong>SSSS Philosophy</strong>. 
+          At Eternal Bliss Lab, we follow a holistic roadmap for spiritual evolution known as the <strong>SSSS Philosophy</strong>. 
           This framework integrates ancient wisdom into modern living through four essential pillars:
         </p>
 
