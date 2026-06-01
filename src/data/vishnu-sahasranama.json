@@ -1,0 +1,744 @@
+[
+  {
+    "title": "Vishnu Sahasranama (विष्णुसहस्रनाम) - MEDITATION ON VISHNU",
+    "slokas": [
+      {
+        "id": 1,
+        "sanskrit": [
+          "शुक्लाम्बरधरं विष्णुं शशिवर्णं चतुर्भुजम् ।",
+          "प्रसन्नवदनं ध्यायेत् सर्वविघ्नोपशान्तये ॥ १॥"
+        ],
+        "english": [
+          "śuklāṁbaradharaṁ viṣṇuṁ śaśivarṇaṁ caturbhujam",
+          "prasannavadanaṁ dhyāyet sarvavighnōpaśāṁtaye"
+        ],
+        "meaning": "One should meditate on Vishnu, dressed in white robes, moon coloured, four-armed, with a cheerful face, for the removal of all obstacles."
+      },
+      {
+        "id": 2,
+        "sanskrit": [
+          "यस्य द्विरदवक्त्राद्याः पारिषद्याः परः शतम् ।",
+          "विघ्नं निघ्नन्ति सततं विष्वक्सेनं तमाश्रये ॥ २॥"
+        ],
+        "english": [
+          "yasya dviradavaktrādyāḥ pāriṣadyāḥ paraḥ śatam",
+          "vighnaṁ nighnanti satataṁ viṣvakasenaṁ tamāśraye"
+        ],
+        "meaning": "The elephant faced one, along with his innumerable attendants, would always remove obstacles, as we depend on Vishvaksena."
+      },
+      {
+        "id": 3,
+        "sanskrit": [
+          "व्यासं वसिष्ठनप्तारं शक्तेः पौत्रमकल्मषम् ।",
+          "पराशरात्मजं वन्दे शुकतातं तपोनिधिम् ॥ ३॥"
+        ],
+        "english": [
+          "vyāsaṁ vasiṣṭhanaptāraṁ śakteḥ pautramakalmaṣam",
+          "parāśarātmajaṁ vande śukatātaṁ tapōnidhim"
+        ],
+        "meaning": "I salute Vyasa, the great grandson of Vasishta, the grandson of Shakti, the immaculate son of Parasara, the father of Shukata, the treasure of austerities."
+      },
+      {
+        "id": 4,
+        "sanskrit": [
+          "व्यासाय विष्णुरूपाय व्यासरूपाय विष्णवे ।",
+          "नमो वै ब्रह्मनिधये वासिष्ठाय नमो नमः ॥ ४॥"
+        ],
+        "english": [
+          "vyāsāya viṣṇurūpāya vyāsarūpāya viṣṇave",
+          "namō vai brahmanidhaye vāsiṣṭhāya namō namaḥ"
+        ],
+        "meaning": "O Vyasa in the form of Vishnu, O Vishnu in the form of Vyasa, O Vasishta, the treasure of the Brahman, I offer my obeisances unto Thee again and again."
+      },
+      {
+        "id": 5,
+        "sanskrit": [
+          "अविकाराय शुद्धाय नित्याय परमात्मने ।",
+          "सदैकरूपरूपाय विष्णवे सर्वजिष्णवे ॥ ५॥"
+        ],
+        "english": [
+          "avikārāya śuddhāya nityāya paramātmane",
+          "sadaikarūparūpāya viṣṇave sarvajiṣṇave"
+        ],
+        "meaning": "Bow I before Vishnu, Who is pure, Who is not affected, Who is permanent, Who is the ultimate truth, and He who wins over all the mortals in this world."
+      },
+      {
+        "id": 6,
+        "sanskrit": [
+          "यस्य स्मरणमात्रेण जन्मसंसारबन्धनात् ।",
+          "विमुच्यते नमस्तस्मै विष्णवे प्रभविष्णवे ॥ ६॥"
+        ],
+        "english": [
+          "yasya smaraṇamātreṇa janmasaṁsārabaṁdhanāt",
+          "vimucyate namastasmai viṣṇave prabhaviṣṇave"
+        ],
+        "meaning": "Obeisance to that Vishnu, the all-powerful Vishnu, whose remembrance alone frees one from the bondage of birth and death."
+      },
+      {
+        "id": 7,
+        "sanskrit": [
+          "ॐ नमो विष्णवे प्रभविष्णवे ।",
+          "श्रीवैशम्पायन उवाच —",
+          "श्रुत्वा धर्मानशेषेण पावनानि च सर्वशः ।",
+          "युधिष्ठिरः शान्तनवं पुनरेवाभ्यभाषत ॥ ७॥"
+        ],
+        "english": [
+          "oṁ namō viṣṇavē prabhaviṣṇavē",
+          "śrī vaiśampāyana uvāca:",
+          "śrutvā dharmānaśēṣēṇa pāvanāni ca sarvaśaḥ",
+          "yudhiṣṭhiraḥ śāntanavaṁ punarēvābhyabhāṣata"
+        ],
+        "meaning": "Sri Vaisampayana said: Having heard the Dharma in its entirety and the holy ones in all respects, Yudhisthira again addressed Shantanu."
+      },
+      {
+        "id": 8,
+        "sanskrit": [
+          "युधिष्ठिर उवाच -",
+          "किमेकं दैवतं लोके किं वाप्येकं परायणम् ।",
+          "स्तुवन्तः कं कमर्चन्तः प्राप्नुयुर्मानवाः शुभम् ॥ ८॥"
+        ],
+        "english": [
+          "śrī yudhiṣṭhira uvāca:",
+          "kimekaṁ daivataṁ lōke kiṁ vāpyekaṁ parāyaṇaṁ",
+          "stuvaṁtaḥ kaṁ kamarcaṁtaḥ prāpnuyurmānavāḥ śubham"
+        ],
+        "meaning": "Yudhishthira asked: Is there one god in this world, or is there one devotee? Whom do men attain to good by praising and worshiping?"
+      },
+      {
+        "id": 9,
+        "sanskrit": [
+          "को धर्मः सर्वधर्माणां भवतः परमो मतः ।",
+          "किं जपन्मुच्यते जन्तुर्जन्मसंसारबन्धनात् ॥ ९॥"
+        ],
+        "english": [
+          "kō dharmaḥ sarvadharmāṇāṁ bhavataḥ paramō mataḥ",
+          "kiṁ japanmucyate jaṁturjanmasaṁsārabaṁdhanāt"
+        ],
+        "meaning": "Which Dharma do you consider to be the supreme of all Dharma? By chanting what is a creature freed from the bondage of birth and death?"
+      },
+      {
+        "id": 10,
+        "sanskrit": [
+          "भीष्म उवाच -",
+          "जगतः प्रभुं देवदेवमनन्तं पुरुषोत्तमम् ।",
+          "स्तुवन्नामसहस्रेण पुरुषः सततोत्थितः ॥ १०॥"
+        ],
+        "english": [
+          "śrī bhīṣma uvāca:",
+          "jagatprabhuṁ devadevamanaṁtaṁ puruṣōttamam",
+          "stuvannāmasahasreṇa puruṣaḥ satatōtthitaḥ"
+        ],
+        "meaning": "Bhishma replied: Praising the Lord of the universe, the God of gods, the infinite Supreme Personality of Godhead, with a thousand names, the man ever rises."
+      },
+      {
+        "id": 11,
+        "sanskrit": [
+          "तमेव चार्चयन्नित्यं भक्त्या पुरुषमव्ययम् ।",
+          "ध्यायन्स्तुवन्नमस्यंश्च यजमानस्तमेव च ॥ ११॥"
+        ],
+        "english": [
+          "tameva cārcayannityaṁ bhaktyā puruṣamavyayam",
+          "dhyāyanstuvannamasyaṁśca yajamānastameva ca"
+        ],
+        "meaning": "By always worshipping with devotion that imperishable Purusha, meditating on Him, praising Him, bowing down to Him, and performing sacrifices for Him."
+      },
+      {
+        "id": 12,
+        "sanskrit": [
+          "अनादिनिधनं विष्णुं सर्वलोकमहेश्वरम् ।",
+          "लोकाध्यक्षं स्तुवन्नित्यं सर्वदुःखातिगो भवेत् ॥ १२॥"
+        ],
+        "english": [
+          "anādinidhanaṁ viṣṇuṁ sarvalōkamaheśvaram",
+          "lōkādhyakṣaṁ stuvannityaṁ sarvaduḥkhātigō bhavet"
+        ],
+        "meaning": "By always praising Vishnu, who is without beginning or end, the supreme Lord of all the worlds, and the overseer of the worlds, one goes beyond all sorrows."
+      },
+      {
+        "id": 13,
+        "sanskrit": [
+          "ब्रह्मण्यं सर्वधर्मज्ञं लोकानां कीर्तिवर्धनम् ।",
+          "लोकनाथं महद्भूतं सर्वभूतभवोद्भवम् ॥ १३॥"
+        ],
+        "english": [
+          "brahmaṇyaṁ sarvadharmajñaṁ lōkānāṁ kīrtivardhanam",
+          "lōkanāthaṁ mahadbhūtaṁ sarvabhūtabhavōdbhavam"
+        ],
+        "meaning": "The one who is friendly to Brahman, the knower of all dharmas, the increaser of the fame of the worlds, the Lord of the worlds, the great Being, and the source of the existence of all beings."
+      },
+      {
+        "id": 14,
+        "sanskrit": [
+          "एष मे सर्वधर्माणां धर्मोऽधिकतमो मतः ।",
+          "यद्भक्त्या पुण्डरीकाक्षं स्तवैरर्चेन्नरः सदा ॥ १४॥"
+        ],
+        "english": [
+          "eṣa me sarvadharmāṇāṁ dharmō'dhikatamo mataḥ",
+          "yadbhaktyā puṇḍarīkākṣṁ stavairarcennaraḥ sadā"
+        ],
+        "meaning": "This, in my opinion, is the greatest of all dharmas: that a person should always worship the lotus-eyed Lord with devotion through hymns of praise."
+      },
+      {
+        "id": 15,
+        "sanskrit": [
+          "परमं यो महत्तेजः परमं यो महत्तपः ।",
+          "परमं यो महद्ब्रह्म परमं यः परायणम् ॥ १५॥"
+        ],
+        "english": [
+          "paramaṁ yō mahattejaḥ paramaṁ yō mahattapaḥ",
+          "paramaṁ yō mahadbrahma paramaṁ yaḥ parāyaṇam"
+        ],
+        "meaning": "He who is the supreme great Light, He who is the supreme great Penance, He who is the supreme great Brahman, He who is the supreme Goal."
+      },
+      {
+        "id": 16,
+        "sanskrit": [
+          "पवित्राणां पवित्रं यो मङ्गलानां च मङ्गलम् ।",
+          "दैवतं देवतानां च भूतानां योऽव्ययः पिता ॥ १६॥"
+        ],
+        "english": [
+          "pavitrāṇāṁ pavitraṁ yō maṅgalānāṁ ca maṅgalam",
+          "daivataṁ devatānāṁ ca bhūtānāṁ yō'vyayaḥ pitā"
+        ],
+        "meaning": "He who is the purest of the pure, the most auspicious of the auspicious, the God of gods, and the imperishable Father of all beings."
+      },
+      {
+        "id": 17,
+        "sanskrit": [
+          "यतः सर्वाणि भूतानि भवन्त्यादियुगागमे ।",
+          "यस्मिंश्च प्रलयं यान्ति पुनरेव युगक्षये ॥ १७॥"
+        ],
+        "english": [
+          "yataḥ sarvāṇi bhūtāni bhavantyādiyugāgame",
+          "yasmiṁśca pralayaṁ yānti punereva yugakṣaye"
+        ],
+        "meaning": "From whom all beings originate at the beginning of the age, and in whom they again reach dissolution at the end of the age."
+      },
+      {
+        "id": 18,
+        "sanskrit": [
+          "तस्य लोकप्रधानस्य जगन्नाथस्य भूपते ।",
+          "विष्णोर्नामसहस्रं मे शृणु पापहरं शुभम् ॥ १८॥"
+        ],
+        "english": [
+          "tasya lōkapradhānasya jagannāthasya bhūpate",
+          "viṣṇōrnāmasahasraṁ me śṛṇu pāpaharaṁ śubham"
+        ],
+        "meaning": "Listen, O King, to the thousand names of Vishnu, the chief of the world and Lord of the universe, which are auspicious and remove all sins."
+      },
+      {
+        "id": 19,
+        "sanskrit": [
+          "यानि नामानि गौणानि विख्यातानि महात्मनः ।",
+          "ऋषिभिः परिगीतानि तानि वक्ष्यामि भूतये ॥ १९॥"
+        ],
+        "english": [
+          "yāni nāmāni gauṇāni vikhyātāni mahātmanaḥ",
+          "ṛṣibhiḥ parigītāni tāni vakṣyāmi bhūtaye"
+        ],
+        "meaning": "Those secondary names of the great soul which are well-known and sung by the sages, I shall recite for the welfare of all."
+      },
+      {
+        "id": 20,
+        "sanskrit": [
+          "ऋषिर्नाम्नां सहस्रस्य वेदव्यासो महामुनिः ।",
+          "छन्दोऽनुष्टुप् तथा देवो भगवान् देवकीसुतः ॥ २०॥"
+        ],
+        "english": [
+          "ṛṣirnāmnāṁ sahasrasya vedavyāsō mahāmuniḥ",
+          "chandō'nuṣṭup tathā devō bhagavān devakīsutaḥ"
+        ],
+        "meaning": "The sage of the thousand names is the great sage Veda Vyasa; the meter is Anushtup; the deity is the Lord, the son of Devaki."
+      },
+      {
+        "id": 21,
+        "sanskrit": [
+          "अमृतोद्भवोद्भवो बीजं शक्तिर्देवकीनन्दनः ।",
+          "त्रिसामा हृदयं तस्य शान्त्यर्थे विनियोज्यते ॥ २१॥"
+        ],
+        "english": [
+          "amṛtāṁśūdbhavō bījaṁ śaktirdevakīnandanaḥ",
+          "trisāmā hṛdayaṁ tasya śāntyarthe viniyōjyate"
+        ],
+        "meaning": "The seed is He who is born from the nectar-rayed moon; the power is the son of Devaki; the heart is the chanter of the three Samas; it is used for the sake of peace."
+      },
+      {
+        "id": 22,
+        "sanskrit": [
+          "विष्णुं जिष्णुं महाविष्णुं प्रभविष्णुं महेश्वरम् ।",
+          "अनेकरूप दैत्यान्तं नमामि पुरुषोत्तमम् ॥ २२॥"
+        ],
+        "english": [
+          "viṣṇuṁ jiṣṇuṁ mahāviṣṇuṁ prabhaviṣṇuṁ maheśvaram",
+          "anekarūpa daityāntaṁ namāmi puruṣōttamam"
+        ],
+       "meaning": "I bow to Vishnu, the victorious, the great Vishnu, the all-powerful, the supreme Lord, the many-formed, the ender of demons, the supreme Purusha."
+      }
+    ]
+  },
+    {
+      "title": "ATHA NYĀSAḤ",
+      "slokas":  [
+      {
+        "id": 23,
+        "sanskrit": [
+          "पूर्वन्यासः ।",
+          "श्रीवेदव्यास उवाच —",
+          "ॐ अस्य श्रीविष्णोर्दिव्यसहस्रनामस्तोत्रमहामन्त्रस्य ।",
+          "श्री वेदव्यासो भगवानृषिः ।",
+          "अनुष्टुप्छन्दः ।",
+          "श्रीमहाविष्णुः परमात्मा श्रीमन्नारायणो देवता ।",
+          "अमृतांशूद्भवो भानुरिति बीजम् ।",
+          "देवकीनन्दनः स्रष्टेति शक्तिः ।",
+          "उद्भवः क्षोभणो देव इति परमो मन्त्रः ।",
+          "शङ्खभृन्नन्दकी चक्रीति कीलकम् ।",
+          "शार्ङ्गधन्वा गदाधर इत्यस्त्रम् ।",
+          "रथाङ्गपाणिरक्षोभ्य इति नेत्रम् ।",
+          "त्रिसामा सामगः सामेति कवचम् ।",
+          "आनन्दं परब्रह्मेति योनिः ।",
+          "ऋतुः सुदर्शनः काल इति दिग्बन्धः ।",
+          "श्रीविश्वरूप इति ध्यानम् ।",
+          "श्रीमहाविष्णुप्रीत्यर्थे जपे विनियोगः ॥"
+        ],
+        "english": [
+          "asya śrī-viṣṇor-divya-sahasra-nāma-stotra-mahā-mantrasya |",
+          "śrī vedavyāso bhagavān-ṛṣiḥ |",
+          "anuṣṭup-chandaḥ |",
+          "śrī-mahā-viṣṇuḥ paramātmā śrīman-nārāyaṇo devatā |",
+          "amṛतāṃśūdbhavo bhānuriti bījam |",
+          "devakīnandanaḥ sraṣṭeti śaktiḥ |",
+          "udbhavaḥ kṣobhaṇo deva iti paramo mantraḥ |",
+          "śaṅkha-bhṛn-nandakī cakrīti kīlakam |",
+          "śārṅga-dhanvā gadā-dhara ity-astram |",
+          "rathāṅga-pāṇir-akṣobhya iti netram |",
+          "trisāmā sāmagaḥ sāmeti kavacam |",
+          "ānanadaṃ para-brahmeti yoniḥ |",
+          "ṛtuḥ sudarśanaḥ kāla iti digbandhaḥ |",
+          "śrī-viśva-rūpa iti dhyānam |",
+          "śrī-mahā-viṣṇu-prītyarthe jape viniyogaḥ"
+        ],
+       "meaning": "Of this great mantra of the thousand names of Vishnu, the sage is Veda Vyasa, the meter is Anushtup, the deity is Mahavishnu, the seed is 'born of nectar', the power is 'son of Devaki', the mantra is 'the agitator', the armor is the conch/sword/discus, the weapon is the bow/mace, the eye is the unshakeable wheel-wielder, the heart is the chanter of Samas, the womb is the Bliss of Brahman, the direction-binder is time/seasons, the meditation is the Universal Form. It is used for the pleasure of Lord Mahavishnu."
+      }
+    ]
+  },
+    {
+      "title": "ATHA DHYĀNAM",
+      "slokas":  [
+      {
+        "id": 24,
+        "sanskrit": [
+          "क्षीरोदन्वत्प्रदेशे शुचिमणिविलसत्सैकते मौक्तिकानां",
+          "मालाक्लृप्तासनस्थः स्फटिकमणिनिभैर्मौक्तिकैर्मण्डिताङ्गः ।",
+          "शुभ्रैरभ्रैरदभ्रैरुपरिविरचितैर्मुक्तपीयूषवर्षैः",
+          "आनन्दी नः पुनीयादरिनलिनगदाशङ्खपाणिर्मुकुन्दः ॥ १॥"
+        ],
+        "english": [
+          "kṣīrōdanvat-pradēśē śuci-maṇi-vilasat-saikatē mauktikānāṃ",
+          "mālā-kḷptāsana-sthaḥ sphaṭika-maṇi-nibhair-mauktikair-maṇḍitāṅgaḥ",
+          "śubhrair-abhrair-adabhrair-upari-viracitair-mukta-pīyūṣa-varṣaiḥ",
+          "ānandī naḥ punīyād-ari-nalina-gadā-śaṅkha-pāṇir-mukundaḥ"
+        ],
+       "meaning": "May Mukunda, with the discus, lotus, mace, and conch in hand, seated on a throne of pearls in the milky ocean, adorned with crystal-like gems, and showered by nectar from white clouds, purify us with joy."
+      },
+      {
+        "id": 25,
+        "verse": 2,
+        "sanskrit": [
+          "भूः पादौ यस्य नाभिर्वियदसुरनिलश्चन्द्रसूर्यौ च नेत्रे",
+          "कर्णावाशाः शिरो द्यौर्मुखमपि दहनो यस्य वास्तेयमब्धिः ।",
+          "अन्तःस्थं यस्य विश्वं सुरनरखगगोभोगिगन्धर्वदैत्यैः",
+          "चित्रं रंरम्यते तं त्रिभुवनवपुषं विष्णुमीशं नमामि ॥ २॥"
+        ],
+        "english": [
+          "bhūḥ pādau yasya nābhir-viyad-asura-nilaś-candra-sūryau ca netre",
+          "karṇāv-āśāḥ śiro dyaur-mukham-api dahano yasya vāstēyam-abdhiḥ",
+          "antaḥsthaṁ yasya viśvaṁ sura-nara-khaga-go-bhogi-gandharva-daityaiḥ",
+          "citraṁ raṁramyate taṁ tri-bhuvana-vapuṣaṁ viṣṇum-īśaṁ namāmi"
+        ],
+       "meaning": "I bow to Lord Vishnu, whose body is the three worlds, whose feet are the earth, whose navel is the sky, whose breath is the wind, whose eyes are the sun and moon, whose ears are the directions, whose head is the heavens, whose mouth is fire, and whose stomach is the ocean, within whom the universe of gods, men, and beings plays."
+      },
+      {
+        "id": 26,
+        "verse": 3,
+        "sanskrit": [
+          "सशङ्खचक्रं सकिरीटकुण्डलं सपीतवस्त्रं सरसीरुहेक्षणम् ।",
+          "सहारवक्षःस्थलकौस्तुभश्रियं नमामि विष्णुं शिरसा चतुर्भुजम् ॥ ३॥"
+        ],
+        "english": [
+          "saśaṅkha-cakraṁ sakirīṭa-kuṇḍalaṁ sapīta-vastraṁ sarasīruhekṣaṇam",
+          "sahāra-vakṣaḥsthala-kaustubha-śriyaṁ namāmi viṣṇuṁ śirasā caturbhujam"
+        ],
+       "meaning": "I bow my head to the four-armed Vishnu, who carries the conch and the discus, wears a crown and earrings, is dressed in yellow silks, has eyes like the lotus, and whose chest is adorned with necklaces and the Kaustubha gem."
+      },
+      {
+        "id": 27,
+        "verse": 4,
+        "sanskrit": [
+          "छायायां पारिजातस्य हेमसिंहासनोपरि ।",
+          "आसीनमम्बुदश्याममायताक्षमलङ्कृतम् ॥ ४॥"
+        ],
+        "english": [
+          "chāyāyāṁ pārijātasya hēmasiṁhāsanōpari",
+          "āsīnamambudaśyāmamāyatākṣamalaṅkṛtam"
+        ],
+       "meaning": "Seated on a golden throne in the shade of the Parijata tree, is the Lord, dark like the rain-cloud, with large eyes, and beautifully adorned."
+      },
+      {
+        "id": 28,
+        "verse": 5,
+        "sanskrit": [
+          "चन्द्राननं चतुर्बाहुं श्रीवत्साङ्कितवक्षसम् ।",
+          "रुक्मिणीसत्यभामाभ्यां सहितं कृष्णमाश्रये ॥ ५॥"
+        ],
+        "english": [
+          "candrānanaṁ caturbāhuṁ śrīvatsāṅkita-vakṣasam",
+          "rukmiṇīsatyabhāmābhyāṁ sahitaṁ kṛṣṇamāśraye"
+        ],
+       "meaning": "I take refuge in Krishna, who has a moon-like face, four arms, a chest marked by Srivatsa, and who is accompanied by Rukmini and Satyabhama."
+      }
+    ]
+  },   
+      {  
+        "title": "STOTRAM — 1000 NAMES",
+        "slokas":  [
+        {
+          "id": 29,
+        "sanskrit": [
+          "विश्वं विष्णुर्वषट्कारो भूतभव्यभवत्प्रभुः ।",
+          "भूतकृद्भूतभृद्भावो भूतात्मा भूतभावनः ॥ १॥"
+        ],
+        "english": [
+          "viśvaṁ viṣṇurvaṣaṭkārō bhūtabhavyabhavat-prabhuḥ",
+          "bhūtakṛdbhūtabhṛdbhāvō bhūtātmā bhūtabhāvanaḥ"
+        ],
+       "meaning": "1. Viśvam; 2. Viṣṇuḥ; 3. Vaṣaṭkāraḥ; 4. Bhūtabhavyabhavat-prabhuḥ; 5. Bhūtakṛt; 6. Bhūtabhṛt; 7. Bhāvaḥ; 8. Bhūtātmā; 9. Bhūtabhāvanaḥ."
+        },
+      {
+        "id": 113,
+        "sanskrit": [
+          "अणुर्बृहत्कृशः स्थूलो गुणभृन्निर्गुणो महान् ।",
+          "अधृतः स्वधृतः स्वास्यः प्राग्वंशो वंशवर्धनः ॥ ८७॥"
+        ],
+        "english": [
+          "aṇurbṛhatkṛśaḥ sthūlō guṇabhṛnnirguṇō mahān",
+          "adhṛtaḥ svadhṛtaḥ svāsyaḥ prāgvaṁśō vaṁśavardhanaḥ"
+        ],
+       "meaning": "815. Anuh: The subtle; 816. Brihat: The great; 817. Krishah: The slender; 818. Sthulah: The gross; 819. Gunabhrit: Sustainer of attributes; 820. Nirgunah: Without attributes; 821. Mahan: The vast; 822. Adhritah: The unsupported; 823. Swadhritah: Self-supported; 824. Swasyah: Of auspicious face; 825. Pragvamshah: The first lineage; 826. Vamshavardhanah: Increaser of the lineage."
+      },
+      {
+        "id": 114,
+        "sanskrit": [
+          "भारभृत्कथितो योगी योगीशः सर्वकामदः ।",
+          "आश्रमः श्रमणः क्षामः सुपर्णो वायुवाहनः ॥ ८८॥"
+        ],
+        "english": [
+          "bhārabhṛtkathitō yōgī yōgīśaḥ sarvakāmadaḥ",
+          "āśramaḥ śramaṇaḥ kṣāmaḥ suparṇō vāyuvāhanaḥ"
+        ],
+       "meaning": "827. Bharabhrit: The bearer of the burden; 828. Kathitah: The renowned; 829. Yogi: The master of Yoga; 830. Yogishah: Lord of Yogis; 831. Sarvakamadah: Giver of all desires; 832. Ashramah: The haven; 833. Shramanah: The seeker; 834. Kshamah: The reducer; 835. Suparnah: The beautiful-winged; 836. Vayuvahanah: The rider of wind."
+      },
+      {
+        "id": 115,
+        "sanskrit": [
+          "धनुर्धरो धनुर्वेदो दण्डो दमयिता दमः ।",
+          "अपराजितः सर्वसहो नियन्ता नियमो यमः ॥ ८९॥"
+        ],
+        "english": [
+          "dhanurdharō dhanurvēdō daṇḍō damayitā damaḥ",
+          "aparājitaḥ sarvasahō niyantā niyamō yamaḥ"
+        ],
+       "meaning": "837. Dhanurdharah: Wielder of the bow; 838. Dhanurvedah: The master of archery; 839. Dandah: The scepter; 840. Damayita: The subduer; 841. Damah: Self-control; 842. Aparajitah: The unconquered; 843. Sarvasahah: All-enduring; 844. Niyanta: The regulator; 845. Niyamah: The law; 846. Yamah: The administrator."
+      },
+      {
+        "id": 116,
+        "sanskrit": [
+          "सत्त्ववान् सात्त्विकः सत्यः सत्यधर्मपरायणः ।",
+          "अभिप्रायः प्रियार्होऽर्हः प्रियकृत् प्रीतिवर्धनः ॥ ९०॥"
+        ],
+        "english": [
+          "sattvavān sāttvikaḥ satyaḥ satyadharmaparāyaṇaḥ",
+          "abhiprāyaḥ priyārhō'rhaḥ priyakṛt prītivardhanaḥ"
+        ],
+       "meaning": "847. Sattvavan: Full of goodness; 848. Sattvikah: Abiding in Sattva; 849. Satyah: The truth; 850. Satyadharmaparayanah: Devoted to truth and righteousness; 851. Abhiprayah: The aimed object; 852. Priyarhah: Worthy of love; 853. Arhah: The deserving; 854. Priyakrit: Doer of good; 855. Pritivardhanah: Enhancer of joy."
+      },
+      {
+        "id": 117,
+        "sanskrit": [
+          "विहायसगतिर्ज्योतिः सुरुचिर्हुतभुग्विभुः ।",
+          "रविर्विरोचनः सूर्यः सविता रविलोचनः ॥ ९१॥"
+        ],
+        "english": [
+          "vihāyasagatirjyōtiḥ surucirhutabhugvibhuḥ",
+          "ravirvirōcanaḥ sūryaḥ savitā ravilōcanaḥ"
+        ],
+       "meaning": "856. Vihayasagatih: Moving in the sky; 857. Jyotih: The brilliance; 858. Surucih: Of beautiful taste; 859. Hutabhuk: Enjoyer of offerings; 860. Vibhuh: All-pervading; 861. Ravih: The sun; 862. Virochanah: Luminous; 863. Suryah: The solar deity; 864. Savita: The generator; 865. Ravilochanah: Sun-eyed."
+      },
+      {
+        "id": 118,
+        "sanskrit": [
+          "अनन्तो हुतभुग्भोक्ता सुखदो नैकजोऽग्रजः ।",
+          "अनिर्विण्णः सदामर्षी लोकाधिष्ठानमद्भुतः ॥ ९२॥"
+        ],
+        "english": [
+          "anantō hutabhugbhōktā sukhadō naikajō'grajaḥ",
+          "anirviṇṇaḥ sadāmarṣī lōkādhiṣṭhānam-adbhutaḥ"
+        ],
+       "meaning": "866. Anantah: The infinite; 867. Hutabhuk: Enjoyer of sacrifice; 868. Bhokta: The enjoyer; 869. Sukhadah: Giver of happiness; 870. Naikajah: Born many times; 871. Agrajah: First-born; 872. Anirvinnah: Free from sorrow; 873. Sadamarshi: Ever-forgiving; 874. Lokadhishthanam: The substratum of the worlds; 875. Adbhutah: The wonderful."
+      },
+      {
+        "id": 119,
+        "sanskrit": [
+          "सनात्सनातनतमः कपिलः कपिरव्ययः ।",
+          "स्वस्तिदः स्वस्तिकृत् स्वस्ति स्वस्तिभुक् स्वस्तिदक्षिणः ॥ ९३॥"
+        ],
+        "english": [
+          "sanātsanātanatamaḥ kapilaḥ kapiravyayaḥ",
+          "svastidaḥ svastikṛt svasti svastibhuk svastidakṣiṇaḥ"
+        ],
+       "meaning": "876. Sanat: Ancient; 877. Sanatanatamah: The most ancient; 878. Kapilah: The sage Kapila; 879. Kapih: The sun; 880. Avyayah: Imperishable; 881. Svastidah: Giver of well-being; 882. Svastikrit: Maker of well-being; 883. Svasti: Well-being itself; 884. Svastibhuk: Enjoyer of well-being; 885. Svastidakshinah: Bestower of well-being."
+      },
+      {
+        "id": 120,
+        "sanskrit": [
+          "अरौद्रः कुण्डली चक्री विक्रम्यूर्जितशासनः ।",
+          "शब्दातिगः शब्दसहः शिशिरः शर्वरीकरः ॥ ९४॥"
+        ],
+        "english": [
+          "araudraḥ kuṇḍalī cakrī vikramyūrjitaśāsanaḥ",
+          "śabdātigaḥ śabdasahaḥ śiśiraḥ śarvarīkaraḥ"
+        ],
+       "meaning": "886. Araudrah: Not fierce; 887. Kundali: Wearing earrings; 888. Chakri: Wielder of the discus; 889. Vikrami: The valiant; 890. Urjitashasanah: Of mighty command; 891. Shabdatigah: Beyond words; 892. Shabdasahah: Endurer of sound; 893. Shishirah: The cool; 894. Sharvarikarah: Maker of night."
+      },
+      {
+        "id": 121,
+        "sanskrit": [
+          "अक्रूरः पेशलो दक्षो दक्षिणः क्षमिणां वरः ।",
+          "विद्वत्तमो वीतभयः पुण्यश्रवणकीर्तनः ॥ ९५॥"
+        ],
+        "english": [
+          "akrūraḥ peśalō dakṣō dakṣiṇaḥ kṣamiṇāṁ varaḥ",
+          "vidvattamō vītabhayaḥ puṇyaśravaṇakīrtanaḥ"
+        ],
+       "meaning": "895. Akrurah: Not cruel; 896. Peshalah: Charming; 897. Dakshah: The expert; 898. Dakshinah: The dexterous; 899. Kshaminnam Varah: Best among the patient; 900. Vidvattamah: Most learned; 901. Vitabhayah: Free from fear; 902. Punyashravanakirtanah: To hear and chant whose names is meritorious."
+      },
+      {
+        "id": 122,
+        "sanskrit": [
+          "उत्तारणो दुष्कृतिहा पुण्यो दुःस्वप्ननाशनः ।",
+          "वीरहा रक्षणः सन्तो जीवनः पर्यवस्थितः ॥ ९६॥"
+        ],
+        "english": [
+          "uttāraṇō duṣkṛtihā puṇyō duḥsvapnanāśanaḥ",
+          "vīrahā rakṣaṇaḥ santō jīvanaḥ paryavasthitaḥ"
+        ],
+       "meaning": "903. Uttaranah: Who lifts out of samsara; 904. Duskritiha: Destroyer of bad deeds; 905. Punyah: The holy; 906. Duhsvapnanashanah: Destroyer of bad dreams; 907. Viraha: Destroyer of powerful enemies; 908. Rakshanah: The protector; 909. Santah: The good; 910. Jivanah: The life-giver; 911. Paryavasthitah: Who is all-pervading."
+      },
+      {
+        "id": 123,
+        "sanskrit": [
+          "अनन्तरूपोऽनन्तश्रीर्जितमन्युर्भयापहः ।",
+          "चतुरस्रो गभीरात्मा विदिशो व्यादिशो दिशः ॥ ९७॥"
+        ],
+        "english": [
+          "anantarūpō'nantaśrīrjitamanurbhayāpahaḥ",
+          "caturasrō gabhīrātmā vidiśō vyādiśō diśaḥ"
+        ],
+       "meaning": "912. Anantarupah: Of infinite forms; 913. Anantashrih: Of infinite glory; 914. Jitamanuh: Conqueror of anger; 915. Bhayapahah: Remover of fear; 916. Chaturasrah: The just; 917. Gabhiratma: Of profound soul; 918. Vidishah: Giver of directions; 919. Vyadishah: Commander of directions; 920. Dishah: The direction itself."
+      },
+      {
+        "id": 124,
+        "sanskrit": [
+          "अनादिर्भूर्भुवो लक्ष्मीः सुवीरो रुचिराङ्गदः ।",
+          "जननो जनजन्मादिर्भीमो भीमपराक्रमः ॥ ९८॥"
+        ],
+        "english": [
+          "anādirbhūrbhuvō lakṣmīḥ suvīrō rucirāṅgadaḥ",
+          "jananō janajanmādirbhīmō bhīmaparākramaḥ"
+        ],
+       "meaning": "921. Anadih: Without beginning; 922. Bhurbhuvah: Substratum of the earth; 923. Lakshmih: The wealth; 924. Suvirah: The great hero; 925. Ruchirangadah: Of beautiful armlets; 926. Jananah: The creator; 927. Janajanmadih: Origin of all beings; 928. Bhimah: The terrible; 929. Bhimaparakramah: Of terrible prowess."
+      },
+      {
+        "id": 125,
+        "sanskrit": [
+          "आधारनिलयो धाता पुष्पहासः प्रजागरः ।",
+          "ऊर्ध्वगः सत्पथाचारः प्राणदः प्रणवः पणः ॥ ९९॥"
+        ],
+        "english": [
+          "ādhāranilayō dhātā puṣpahāsaḥ prajāgaraḥ",
+          "ūrdhvagah satpathācārah prāṇadah praṇavah paṇah"
+        ],
+       "meaning": "930. Adharanilayah: Support of the supportless; 931. Dhata: The ordainer; 932. Pushpahasah: Smiling like a flower; 933. Prajagarah: Ever-awake; 934. Urdhvagah: Moving upwards; 935. Satpathacharah: Walking the path of truth; 936. Pranadah: Life-giver; 937. Pranavah: Om; 938. Panah: The transaction."
+      },
+      {
+        "id": 126,
+        "sanskrit": [
+          "प्रमाणं प्राणनिलयः प्राणभृत्प्राणजीवनः ।",
+          "तत्त्वं तत्त्वविदेकात्मा जन्ममृत्युजरातिगः ॥ १००॥"
+        ],
+        "english": [
+          "pramāṇam prāṇanilayah prāṇabhṛt prāṇajīvanah",
+          "tattvaṁ tattvavidēkātmā janmamṛtyujarātigaḥ"
+        ],
+       "meaning": "939. Pramanam: The authority; 940. Prananilayah: Abode of life; 941. Pranabhrit: Sustainer of life; 942. Pranajivanah: Life of life; 943. Tattvam: The reality; 944. Tattvavit: Knower of reality; 945. Ekatma: The one soul; 946. Janmamrityujaratihah: Beyond birth, death and old age."
+      },
+      {
+        "id": 127,
+        "sanskrit": [
+          "भूर्भवःस्वस्तरुस्तारः सविता प्रपितामहः ।",
+          "यज्ञो यज्ञपतिर्यज्वा यज्ञाङ्गो यज्ञवाहनः ॥ १०१॥"
+        ],
+        "english": [
+          "bhūrbhuvaḥsvastarustāraḥ savitā prapitāmahaḥ",
+          "yajñō yajñapatiryajvā yajñāṅgō yajñavāhanaḥ"
+        ],
+       "meaning": "947. Bhurbhuvah-svastaruh: Tree of the three worlds; 948. Tarah: Savior; 949. Savita: Generator; 950. Prapitamahah: Great-grandfather; 951. Yajnah: Sacrifice; 952. Yajnapatih: Lord of sacrifice; 953. Yajva: The performer of sacrifice; 954. Yajnangah: Limbs of sacrifice; 955. Yajnavahanah: Vehicle of sacrifice."
+      },
+      {
+        "id": 128,
+        "sanskrit": [
+          "यज्ञभृद्यज्ञकृद्यज्ञी यज्ञभुग्यज्ञसाधनः ।",
+          "यज्ञान्तकृद्यज्ञगुह्यमन्नमन्नाद एव च ॥ १०२॥"
+        ],
+        "english": [
+          "yajñabhṛdyajñakṛdyajñī yajñabhugyajñasādhanaḥ",
+          "yajñāntakṛdyajñaguhyamannamannāda ēva ca"
+        ],
+       "meaning": "956. Yajnabhrit: Upholder of sacrifice; 957. Yajnakrit: Creator of sacrifice; 958. Yajni: Enjoyer of sacrifice; 959. Yajnabhuk: Receiver of sacrifice; 960. Yajnasadhanah: Means of sacrifice; 961. Yajnantakrit: Who performs the end of sacrifice; 962. Yajnaguhyam: The secret of sacrifice; 963. Annam: Food; 964. Annadah: Eater of food."
+      },
+      {
+        "id": 129,
+        "sanskrit": [
+          "सहस्रार्चिः सप्तजिह्वः सप्तैधाः सप्तवाहनः ।",
+          "अमूर्तिरनिघोऽचिन्त्यो भयकृद्भयनाशनः ॥ १०३॥"
+        ],
+        "english": [
+          "sahasrārciḥ saptajihvaḥ saptaidhāḥ saptavāhanaḥ",
+          "amūrtiranighō'cintyō bhayakṛdbhayanāśanaḥ"
+        ],
+       "meaning": "965. Sahasrarcih: Thousand-rayed; 966. Saptajihvah: Seven-tongued; 967. Saptaidhah: Seven-fuelled; 968. Saptavahanah: Seven-vehicled; 969. Amurtih: Formless; 970. Anaghah: Sinless; 971. Acintyah: Inconceivable; 972. Bhayakrit: Creator of fear; 973. Bhayanashanah: Destroyer of fear."
+      },
+      {
+        "id": 130,
+        "sanskrit": [
+          "अणुर्बृहत्कृशः स्थूलो गुणभृन्निर्गुणो महान् ।",
+          "अधृतः स्वधृतः स्वास्यः प्राग्वंशो वंशवर्धनः ॥ १०४॥"
+        ],
+        "english": [
+          "aṇurbṛhatkṛśaḥ sthūlō guṇabhṛnnirguṇō mahān",
+          "adhṛtaḥ svadhṛtaḥ svāsyaḥ prāgvaंśō vaṁśavardhanaḥ"
+        ],
+       "meaning": "974. Anuh: Atom-like; 975. Brihat: The great; 976. Krishah: The lean; 977. Sthulah: The stout; 978. Gunabhrit: Supporter of Gunas; 979. Nirgunah: Without Gunas; 980. Mahan: The great; 981. Adhritah: The unsupported; 982. Swadhritah: Self-supported; 983. Swasyah: Of lovely face; 984. Pragvamshah: Oldest lineage."
+      },
+      {
+        "id": 131,
+        "sanskrit": [
+          "भारभृत्कथितो योगी योगीशः सर्वकामदः ।",
+          "आश्रमः श्रमणः क्षामः सुपर्णो वायुवाहनः ॥ १०५॥"
+        ],
+        "english": [
+          "bhārabhṛtkathitō yōgī yōgīśaḥ sarvakāmadaḥ",
+          "āśramaḥ śramaṇaḥ kṣāmaḥ suparṇō vāyuvāhanaḥ"
+        ],
+       "meaning": "Names up to 984 concluding this block: Bharabhrit, Kathitah, Yogi, Yogishah, Sarvakamadah, Ashramah, Shramanah, Kshamah, Suparnah, Vayuvahanah."
+      },
+      {
+        "id": 132,
+        "sanskrit": [
+          "आत्मायोनिः स्वयंजातो वैखानः सामगायनः ।",
+          "देवकीनन्दनः स्रष्टा क्षितीशः पापनाशनः ॥ १०६॥"
+        ],
+        "english": [
+          "ātmayōniḥ svayaṃjātō vaikhānaḥ sāmagāyanaḥ",
+          "dēvakīnandanaḥ sraṣṭā kṣitīśaḥ pāpanāśanaḥ"
+        ],
+       "meaning": "985. Atmayonih: Source of Himself; 986. Svayamjatah: Self-born; 987. Vaikhanah: Who dug the earth; 988. Samagayanah: Singer of Sama hymns; 989. Devakinandanah: Son of Devaki; 990. Srashta: The creator; 991. Kshitishah: Lord of earth; 992. Papanashanah: Destroyer of sins."
+      },
+      {
+        "id": 133,
+        "sanskrit": [
+          "शङ्खभृन्नन्दकी चक्री शार्ङ्गधन्वा गदाधरः ।",
+          "रथाङ्गपाणिरक्षोभ्यः सर्वप्रहरणायुधः ॥ १०७॥",
+          "सर्वप्रहरणायुध ॐ नम इति ।"
+        ],
+        "english": [
+          "śaṅkhabhṛnnandakī cakrī śārṅgadhanvā gadādharaḥ",
+          "rathāṅgapāṇirakṣōbhyaḥ sarvapraharaṇāyudhaḥ",
+          "sarvapraharaṇāyudha oṁ nama iti"
+        ],
+       "meaning": "993. Shankhabhrit: Carrying the conch; 994. Nandaki: Carrying the sword; 995. Chakri: Carrying the discus; 996. Sharngadhanva: Carrying the bow; 997. Gadadharah: Carrying the mace; 998. Rathangapanih: Wheel in hand; 999. Akshobhyah: Unshakeable; 1000. Sarvapraharanayudhah: Armed with all weapons. Salutations to the Lord armed with all weapons."
+      },
+      {
+        "id": 134,
+        "sanskrit": [
+          "वनमाली गदी शार्ङ्गी शङ्खी चक्री च नन्दकी ।",
+          "श्रीमान् नारायणो विष्णुर्वासुदेवोऽभिरक्षतु ॥ १०८॥",
+          "श्री वासुदेवोऽभिरक्षतु ॐ नम इति ।"
+        ],
+        "english": [
+          "vanamālī gadī śārṅgī śaṅkhī cakrī ca nandakī",
+          "śrīmān nārāyaṇō viṣṇurvāsudēvō'bhirakṣatu",
+          "śrī vāsudēvō'bhirakṣatu oṃ nama iti"
+        ],
+       "meaning": "Adorned with the forest garland, carrying the mace, the bow, the conch, the discus, and the sword; may the illustrious Narayana, the all-pervading Vishnu, the son of Vasudeva, protect us all."
+      }
+    ]
+  },
+      {
+        "title": "PHALASHRUTI — CONCLUDING VERSES",
+        "description": "The Vishnu Sahasranama, meaning 'Thousand Names of Vishnu,' is a revered hymn in Hinduism that lists the various names and attributes of Lord Vishnu. Each name reflects a different aspect of the deity's nature, qualities, and cosmic functions. The Sahasranama is often recited as a form of devotion and meditation, with each name invoking a specific attribute or blessing associated with Lord Vishnu. It is considered a powerful tool for spiritual growth and connection with the divine." ,
+        "slokas":  [
+          {
+            "id": 164,
+            "sanskrit": [
+              "इतीदं कीर्तनीयस्य केशवस्य महात्मनः ।",
+              "नाम्नां सहस्रं दिव्यानामशेषेण प्रकीर्तितम् ॥ १॥"
+            ],
+            "english": [
+              "itīdaṁ kīrtanīyasya kēśavasya mahātmanaḥ",
+              "nāmnāṁ sahasraṁ divyānāmaśēṣēṇa prakīrtitam"
+            ],
+           "meaning": "Thus, this thousand divine names of the great-souled Keshava, worthy of being sung, has been recited in its entirety."
+          },
+      {
+        "id": 136,
+        "sanskrit": [
+          "य इदं शृणुयान्नित्यं यश्चापि परिकीर्तयेत् ।",
+          "नाशुभं प्राप्नुयात् किञ्चित् सोऽमुत्रेह च मानवः ॥ २॥"
+        ],
+        "english": [
+          "ya idaṁ śṛṇuyān-nityaṁ yaścāpi parikīrtayēt",
+          "nāśubhaṁ prāpnuyāt kiñcit sō'mutrēha ca mānavaḥ"
+        ],
+       "meaning": "The man who hears this daily or recites it daily will not meet with anything inauspicious in this world or the next."
+      },
+      {
+        "id": 161,
+        "sanskrit": [
+          "पार्वत्युवाच -",
+          "केनोपायेन लघुना विष्णोर्नामसहस्रकम् ।",
+          "पठ्यते पण्डितैर्नित्यं श्रोतुमिच्छाम्यहं प्रभो ॥ २६॥"
+        ],
+        "english": [
+          "pārvatyuvāca -",
+          "kēnōpāyēna laghunā viṣṇōrnāmasahasrakam",
+          "pathyatē paṇḍitairnityaṁ śrōtumicbhāmyahaṁ prabhō"
+        ],
+       "meaning": "Parvati asked: By what easy means is the thousand names of Vishnu recited daily by the learned? I wish to hear this, O Lord."
+      },
+      {
+        "id": 162,
+        "sanskrit": [
+          "ईश्वर उवाच -",
+          "श्रीराम राम रामेति रमे रामे मनोरमे ।",
+          "सहस्रनामतत्तुल्यं रामनाम वरानने ॥ २७॥"
+        ],
+        "english": [
+          "īśvara uvāca -",
+          "śrīrāma rāma rāmēti ramē rāmē manōramē",
+          "sahasranāmatattulyaṁ rāmanāma varānanē"
+        ],
+       "meaning": "Lord Shiva said: 'Rama, Rama, Rama'—thus I delight in Rama, the captivator of the mind. The name of Rama is equal to the thousand names, O fair-faced one."
+      }
+    ]
+  }
+]

@@ -6,7 +6,8 @@ import gitaDhyanam from '../data/gita-dhyanam.json';
 import gitaVerses from '../data/gita-selected-verses.json';
 import guruStotram from '../data/guru-stotram.json';
 import hanumanChalisa from '../data/hanuman-chalisa.json';
-
+import ramStuti from '../data/ram-stuti.json';
+import vishnuSahasranamam from '../data/vishnu-sahasranama.json';
 const SwadhayaVerses = () => {
   const [activeTab, setActiveTab] = useState('gita');
   const scrollerRef = useRef(null);
@@ -29,8 +30,13 @@ const SwadhayaVerses = () => {
     },
     'hanuman-chalisa': {
       name: 'Hanuman Chalisa',
-      data: hanumanChalisa,
+      data: [...hanumanChalisa, ...ramStuti],
       title: 'Hanuman Chalisa'
+    },
+    'vishnu-sahasranamam': {
+      name: 'Vishnu Sahasranamam',
+      data: vishnuSahasranamam,
+      title: 'Vishnu Sahasranamam'
     }
   }), []);
 

@@ -12,11 +12,11 @@
             "इति एकश्लोकि रामायणं सम्पूर्णम् ॥"
         ],
         "english": [
-            "aadau raama tapovanaadi gamanam hatvaa mrugam kaanchanam",
-            "vaidehee haraNam jaTaayu maraNam sugreeva sambhaash aNam |",
-            "baalee nigrahaNam samudra taraNam lankaapuree daahanam",
-            "pashchaat raavaNa kumbhakarNa hananametaddhi raamaayaNam",
-            "Iti ekashlokee raamaayaNam sampoorNam ||"
+            "ādau rāma tapovanādi gamanaṃ hatvā mṛgaṃ kāñcanaṃ |",
+            "vaidehī haraṇaṃ jaṭāyu maraṇaṃ sugrīva sambhāṣaṇam ||",
+            "vālī nirgrahaṇaṃ samudra taraṇaṃ laṅkāpurī dāhanaṃ |",
+            "paścāta rāvaṇa kumbhakarṇa hananametaddhi rāmāyaṇam ||",
+            "iti ekaślokī rāmāyaṇam sampūrṇam ||"
         ],
         "meaning": "This single verse summarizes the entire Ramayana: It begins with Rama's penance, his exile, the abduction of Sita, the killing of Ravana, and ends with meditation on Rama's lotus feet."
       }
@@ -32,10 +32,8 @@
           "लोकाभिरामं श्रीरामं भूयो भूयो नमाम्यमहम्"
         ],
         "english": [
-          "Apadamapaharttaram",
-          "Dataram sarvasampadam",
-          "Lokabhiramam shriramam",
-          "Bhuyo-bhuyo namamyaham"
+          "āpadāmapaharttārām dātāraṃ sarvasampadām",
+          "lokābhirāmaṃ śrīrāmaṃ bhūyo bhūyo namāmyaham"
         ],
         "meaning": "I bow down again and again to Sri Ram who is the remover of all calamities, giver of all wealth, and the most beautiful in all the worlds."
       },
@@ -46,10 +44,8 @@
           "रघुनाथाय नाथाय सीतायाः पतये नमः"
         ],
         "english": [
-          "Ramaya ramabhadraya",
-          "Ramachandraya manase",
-          "Raghunathaya nathaya",
-          "Sitayah pataye namah"
+          "rāmāya rāmabhadrāya rāmacandrāya mānase",
+          "raghunāthāya nāthāya sītāyāḥ pataye namaḥ"
         ],
         "meaning": "I mentally bow to Sri Ram, Ramabhadra, Ramachandra, Raghunath, Nath, and husband of Sita."
       },
@@ -60,10 +56,8 @@
           "पाणौ महासायक चारु चापं नमामि रामं रगुवंशनाथम्"
         ],
         "english": [
-          "Nilambujashyamalakomalangam",
-          "Sitasamaropitavamabhagam",
-          "Panau mahasayaka charu chapam",
-          "Namami ramam raghuvanshanatham"
+          "nīlāmbujāśyāmalakomalāṅgaṃ sītāsamāropitavāmabhāgam",
+          "pāṇau mahāsāyaka cāru cāpaṃ namāmi rāmaṃ raghuvaṃśanātham"
         ],
         "meaning": "I bow with reverence to Ramchandra, the Lord of the Raghu dynasty, whose limbs are soft and dark like the blue cloud, on whose left is Sita and who holds excellent arrows and a beautiful bow in his hands."
       },
@@ -74,10 +68,8 @@
           "भूतादिनाथं भुवनाधिपत्यम् भजामि रामं भवरोग वैद्यम्"
         ],
         "english": [
-          "Bhavabdhipotam bharatagrajamtam",
-          "Bhaktapriyam bhanukula pradipam",
-          "Bhutadinatham bhuvanadhipatyam",
-          "Bhajami ramam bhavaroga vaidyam"
+          "bhavābdhipotaṃ bhāratāgrajantaṃ bhaktapriyaṃ bhānukula pradīpam",
+          "bhūtādināthaṃ bhuvanādhipatyaṃ bhajāmi rāmaṃ bhavaroga vaidyam"
         ],
         "meaning": "I repeat the name of Ram, which is the ship that takes one across the ocean of wordly existence, the elder brother of Bharat, the luminary of the solar dynasty, master of all the animate and inanimate objects of creation, the ruler of the worlds and the physician of mundane afflictions."
       },
@@ -87,8 +79,11 @@
           "लोकाभिरामं रणरंगधीरम् राजीवनेत्रं रघुवंशनाथम",
           "कारुण्यरूपं करुणाकरं तं श्री रामचंद्रम् शरणं प्रपद्ये"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "lokābhirāmaṃ raṇaraṅgadhīram rājīvanetraṃ raghuvaṃśanātham",
+          "kāruṇyarūpaṃ karuṇākaraṃ taṃ śrī rāmacandram śaraṇaṃ prapadye"
+        ],
+        "meaning": "I take refuge in Shri Ramachandra, the delight of the world, the brave one in the battlefield, the lotus-eyed one, the Lord of the Raghu dynasty, the embodiment of compassion, and the source of mercy."
       }
     ]
   },
@@ -98,47 +93,100 @@
       {
         "id": 1,
         "sanskrit": [
-          "श्री राम चंद्र कृपालु भजमन हरण भाव भय दारुणम्।",
-          "नवकंज लोचन कंज मुखकर, कंज पद कन्जारुणम्।।"
+          "श्री राम चंद्र कृपालु भजमन, हरण भाव भय दारुणम् ।",
+          "नवकंज लोचन कंज मुखकर, कंज पद कन्जारुणम् ॥१॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "śrīrāma candra kṛpālu bhaju mana haraṇa bhavabhaya dāruṇam ।",
+          "navakañja locana kañja mukhakara kañja pada kañjāruṇam ॥1॥"
+        ],
+        "meaning": "O my mind! Worship the compassionate Shri Ramachandra, who removes the terrible fear of worldly existence. His eyes are like a fresh lotus, His face and hands are like a lotus, and His feet are like a red lotus."
       },
       {
         "id": 2,
         "sanskrit": [
-          "कंदर्प अगणित अमित छवी नव नील नीरज सुन्दरम्।",
-          "पट्पीत मानहु तडित रूचि शुचि नौमी जनक सुतावरम्।।"
+          "कंदर्प अगणित अमित छवी, नव नील नीरज सुन्दरम् ।",
+          "पट्पीत मानहु तडित रूचि शुचि, नौमी जनक सुतावरम् ॥२॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "kandarpa agaṇita amita chavī nava nīla nīraja sundaram ।",
+          "paṭapīta mānahu taḍita ruci śuci naumi janaka sutāvaram ॥2॥"
+        ],
+        "meaning": "His beauty excels that of countless Kamadevas (Cupids). He is as beautiful as a fresh blue water-lily. I bow to the husband of Janaka's daughter (Sita), whose yellow robes shine like a flash of pure lightning."
       },
       {
         "id": 3,
         "sanskrit": [
-          "भजु दीन बंधु दिनेश दानव दैत्य वंश निकंदनम्।",
-          "रघुनंद आनंद कंद कौशल चंद दशरथ नन्दनम्।।"
+          "भजु दीन बंधु दिनेश दानव, दैत्य वंश निकंदनम्।",
+          "रघुनंद आनंद कंद कौशल, चंद दशरथ नन्दनम् ॥३॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "bhaju dīnabandhu dineśa dānava daityavaṃśa nikandanam |",
+          "raghunanda ānandakanda kauśala canda daśaratha nandanam |3|"
+        ],
+        "meaning": "Worship the friend of the poor, the sun (Lord) of the Solar dynasty, the destroyer of the lineage of demons and giants. He is the joy of the Raghus, the source of bliss, the moon of Kosala, and the son of Dasharatha."
       },
       {
         "id": 4,
         "sanskrit": [
-          "सिर मुकुट कुण्डल तिलक चारु उदारू अंग विभूषणं।",
-          "आजानु भुज शर चाप धर संग्राम जित खर-धूषणं।।"
+          "सिर मुकुट कुण्डल तिलक, चारु उदारू अंग विभूषणं।",
+          "आजानु भुज शर चाप धर, संग्राम जित खर-धूषणं ॥४॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "śira mukuṭa kuṇḍala tilaka cāru udāru aṅga vibhūṣaṇam |",
+          "ājānubhuja śara cāpa dhara saṅgrāmajita khara dūṣaṇam |4|"
+        ],
+        "meaning": "He wears a crown on His head, earrings, a tilaka, and beautiful ornaments on His noble limbs. He has long arms reaching to His knees, holds a bow and arrow, and conquered Khara and Dushana in battle."
       },
       {
         "id": 5,
         "sanskrit": [
-          "इति वदति तुलसीदास शंकर शेष मुनि मन रंजनम्।",
-          "मम ह्रदय कुंज निवास कुरु कामादी खल दल गंजनम्।।"
+          "इति वदति तुलसीदास शंकर, शेष मुनि मन रंजनम्।",
+          "मम ह्रदय कुंज निवास कुरु, कामादी खल दल गंजनम् ॥५॥ "
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "iti vadati tulasīdāsa śaṅkara śeṣamuni manarañjanam |",
+          "mama hṛdaya kañja nivāsa kuru kāmādi khala dalagañjanam |5|"
+        ],
+        "meaning": "Thus says Tulsidas: O Lord, who delights the minds of Shiva, Shesha, and the sages! Dwell in the lotus of my heart and destroy the group of vices like lust and ego."
+      },
+      {
+        "id": 6,
+        "sanskrit": [ 
+          "मन जाहि राच्यो मिलहि सो, वर सहज सुन्दर सांवरो ।",
+          "करुणा निधान सुजान शील, स्नेह जानत रावरो ॥६॥"
+        ],
+        "english": [
+          "ehi bhāti gaurī asīsa suni siya sahita hiya haraṣita alī |",
+          "tulasī bhavānihi pūji puni puni mudita mana mandira calī ||6||"
+        ],
+        "meaning": "Hearing Gauri's blessing in this way, Sita and her companions were delighted at heart. Tulsidas says, having worshipped Bhavani again and again, Sita returned to the palace with a joyful mind."
+      },
+      {
+        "id": 7,
+        "sanskrit": [ 
+          "एहि भांति गौरी असीस सुन सिय, सहित हिय हरषित अली।",
+          "तुलसी भवानिहि पूजी पुनि-पुनि, मुदित मन मन्दिर चली ॥७॥"
+        ],
+        "english": [
+          "ehi bhāti gaurī asīsa suni siya sahita hiya haraṣita alī |",
+          "tulasī bhavānihi pūji puni puni mudita mana mandira calī ||7||"
+        ],
+        "meaning": "Hearing Gauri's blessing in this way, Sita and her companions were delighted at heart. Tulsidas says, having worshipped Bhavani again and again, Sita returned to the palace with a joyful mind."
+      },
+      {
+        "id": 8,
+        "sanskrit": [
+         "॥सोरठा॥",
+         "जानी गौरी अनुकूल सिय, हिय हरषु न जाइ कहि ।",
+         "मंजुल मंगल मूल वाम, अङ्ग फरकन लगे।"
+        ],
+        "english": [
+          "|| soraṭhā ||",
+          "jānī gaurī anukūla siya hiya haraṣu na jāi kahi |",
+          "mañjula maṅgala mūla vāma aṅga pharakana lage |"
+        ],
+        "meaning": "Knowing Gauri to be favorable, Sita's heart felt an indescribable joy. Beautiful and auspicious omens occurred as her left limbs began to throb."
       }
     ]
   },
@@ -151,8 +199,11 @@
           "भए प्रगट कृपाला दीनदयाला, कौसल्या हितकारी ।",
           "हरषित महतारी, मुनि मन हारी, अद्भुत रूप बिचारी ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "bhae pragaṭa kṛpālā dīnadayālā kausalyā hitakārī |",
+          "haraṣita mahatārī muni mana hārī adbhuta rūpa bicārī ||"
+        ],
+        "meaning": "The compassionate Lord, who is kind to the poor and the benefactor of Kausalya, has manifested. Seeing His wonderful form, which steals the minds of sages, Mother Kausalya was filled with joy."
       },
       {
         "id": 2,
@@ -160,8 +211,11 @@
           "लोचन अभिरामा, तनु घनस्यामा, निज आयुध भुजचारी ।",
           "भूषन बनमाला, नयन बिसाला, सोभासिंधु खरारी ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "locana abhirāmā tanu ghanasyāmā nija āyudha bhujacārī |",
+          "bhūṣana banamālā nayana bisālā sobhā sindhu kharārī ||"
+        ],
+        "meaning": "He has beautiful eyes, a dark body like a rain-cloud, and holds His weapons in His four arms. Adorned with ornaments and a forest garland, with large eyes, He is an ocean of beauty and the enemy of Khara."
       },
       {
         "id": 3,
@@ -169,8 +223,11 @@
           "कह दुइ कर जोरी, अस्तुति तोरी, केहि बिधि करूं अनंता ।",
           "माया गुन ग्यानातीत अमाना, वेद पुरान भनंता ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "kaha dui kara jorī astuti torī kehi bidhi karauṃ anaṃtā |",
+          "māyā guna gyānātīta amānā beda purāna bhanaṃtā ||"
+        ],
+        "meaning": "With joined palms, she said, 'O Infinite Lord! How can I pray to You? You are beyond Maya (illusion), attributes, and knowledge; You are immeasurable, as the Vedas and Puranas declare.'"
       },
       {
         "id": 4,
@@ -178,8 +235,11 @@
           "करुना सुख सागर, सब गुन आगर, जेहि गावहिं श्रुति संता ।",
           "सो मम हित लागी, जन अनुरागी, भयउ प्रगट श्रीकंता ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "karunā sukha sāgara saba guna āgara jehi gāvahiṃ śruti saṃtā |",
+          "so mama hita lāgī jana anurāgī bhayau pragaṭa śrīkaṃtā ||"
+        ],
+        "meaning": "The ocean of mercy and happiness, the repository of all virtues, whom the Vedas and saints sing about—that Lord of Lakshmi, who loves His devotees, has appeared for my sake."
       },
       {
         "id": 5,
@@ -187,8 +247,11 @@
           "ब्रह्मांड निकाया, निर्मित माया, रोम रोम प्रति बेद कहै ।",
           "मम उर सो बासी, यह उपहासी, सुनत धीर मति थिर न रहै ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "brahmāṃḍa nikāyā nirmita māyā roma roma prati beda kahai |",
+          "mama ura so bāsī yaha upahāsī sunata dhīra mati thira na rahai ||"
+        ],
+        "meaning": "The Vedas say that in every pore of Your body reside multiple universes created by Your Maya. That such a Lord was staying in my womb is inconceivable; hearing this, even the minds of the wise do not remain steady."
       },
       {
         "id": 6,
@@ -196,8 +259,11 @@
           "उपजा जब ग्याना, प्रभु मुसुकाना, चरित बहुत बिधि कीन्ह चहै ।",
           "कहि कथा सुहाई, मातु बुझाई, जेहि प्रकार सुत प्रेम लहै ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "upajā jaba gyānā prabhu musukānā carita bahuta bidhi kīnha cahai |",
+          "kahi kathā suhāī mātu bujhāī jehi prakāra suta prema lahai ||"
+        ],
+        "meaning": "When this wisdom dawned on Kausalya, the Lord smiled, wishing to perform many kinds of pastimes. He told her a beautiful story to explain how she could experience the love of having a son."
       },
       {
         "id": 7,
@@ -205,8 +271,11 @@
           "माता पुनि बोली, सो मति डोली, तजहु तात यह रूपा ।",
           "कीजै सिसुलीला, अति प्रियसीला, यह सुख परम अनूपा ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "mātā puni bolī so mati dolī tajahu tāta yaha rūpā |",
+          "kījai sisulīlā ati priyasīlā yaha sukha parama anūpā ||"
+        ],
+        "meaning": "The mother spoke again, her mind wavering, 'O dear one! Abandon this divine form. Perform child-like pastimes which are very dear; that joy is supreme and incomparable.'"
       },
       {
         "id": 8,
@@ -214,8 +283,11 @@
           "सुनि बचन सुजाना, रोदन ठाना, होइ बालक सुरभूपा ।",
           "यह चरित जे गावहिं, हरिपद पावहिं, ते न परहिं भवकूपा ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "suni bacana sujānā rodana ṭhānā hoi bālaka surabhūpā |",
+          "yaha carita je gāvahiṃ haripada pāvahiṃ te na parahiṃ bhavakūpā ||"
+        ],
+        "meaning": "Hearing her words, the wise Lord of the gods began to cry and became a child. Those who sing of this pastime attain the feet of Hari and do not fall into the well of worldly existence."
       },
       {
         "id": 9,
@@ -224,8 +296,12 @@
           "बिप्र धेनु सुर संत हित, लीन्ह मनुज अवतार ।",
           "निज इच्छा निर्मित तनु, माया गुन गो पार ॥"
         ],
-        "english": [],
-        "meaning": ""
+        "english": [
+          "dohā:",
+          "bipra dhenu sura saṃta hita līnha manuja avatāra |",
+          "nija icchā nirmita tanu māyā guna go pāra ||"
+        ],
+        "meaning": "For the sake of Brahmanas, cows, gods, and saints, He took a human incarnation. His body is created by His own will, and He is beyond Maya, its attributes, and the senses."
       }
     ]
   }
