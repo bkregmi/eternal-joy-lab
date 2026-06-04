@@ -24,7 +24,13 @@
       ]
     }
   ],
-  "nepali-bhajans": [],
+  "nepali-bhajans": [
+    {
+      "name": "Kun Mandir Ma Janchau Yatri",
+      "path": "",
+      "youtubeLink": "https://youtu.be/LZWji01oo04?list=RDLZWji01oo04"
+    }
+  ],
   "satsanga": [
     {
       "name": "Satsanga - 20221105",
@@ -107,6 +113,10 @@
     {
       "name": "Ram Stuties - EJL (Stuti)",
       "path": "/media/audio/personal/stuti_ram-stuties_ejl.m4a"
+    },
+    {
+      "name": "Remote Personal Bhajan - Example",
+      "path": "https://example.com/remote-audio.mp3"
     }
   ],
   "satganga": [
@@ -133,6 +143,21 @@
     {
       "name": "Shyams Undar Hamaro Yaar - Salin (Satsanga)",
       "path": "/media/audio/satganga/satsanga_shyams-undar-hamaro-yaar_salin.m4a"
+    }
+  ],
+  "blissful-stuties": [
+    {
+      "group": "Sri Krishna Lahari Stotram",
+      "tracks": [
+        {
+          "name": "Kasturi Tilakam",
+          "path": "/media/audio/personal/stuti_kasturi-tilakam01_ejl.m4a"
+        },
+        {
+          "name": "Blissful Stuti 1 - Remote",
+          "path": "https://example.com/blissful-stuti-1.mp3"
+        }
+      ]
     }
   ]
 }

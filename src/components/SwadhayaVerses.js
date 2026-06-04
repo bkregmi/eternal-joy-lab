@@ -8,6 +8,7 @@ import guruStotram from '../data/guru-stotram.json';
 import hanumanChalisa from '../data/hanuman-chalisa.json';
 import ramStuti from '../data/ram-stuti.json';
 import vishnuSahasranamam from '../data/vishnu-sahasranama.json';
+import gopalSahasranamam from '../data/gopal-sahastranam.json';
 const SwadhayaVerses = () => {
   const [activeTab, setActiveTab] = useState('gita');
   const scrollerRef = useRef(null);
@@ -37,6 +38,11 @@ const SwadhayaVerses = () => {
       name: 'Vishnu Sahasranamam',
       data: vishnuSahasranamam,
       title: 'Vishnu Sahasranamam'
+    },
+    'gopal-sahasranamam': {
+      name: 'Gopal  Sahasranamam',
+      data: gopalSahasranamam,
+      title: 'Gopal Sahasranamam'
     }
   }), []);
 

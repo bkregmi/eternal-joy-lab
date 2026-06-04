@@ -12,6 +12,11 @@ import SatsangaAudio from './components/SatsangaAudio';
 import PersonalAudio from './components/PersonalAudio';
 import DocViewer from './components/DocViewer';
 import prayerData from './data/daily-prayers.json';
+import { AuthProvider } from './data/AuthContext';
+import ProtectedRoute from './components/ProtectedRoute';
+import LoginPage from './components/LoginPage';
+import AddSloka from './components/AddSloka';
+import MediaManager from './components/MediaManager';
 import gopiGeet from './data/gopi-geet.json';
 import govindaAdipurusha from './data/govinda-adipurusha.json';
 import gitaDhyanam from './data/gita-dhyanam.json';
@@ -25,29 +30,34 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="app">
-      <header className="app-header"><h1>Eternal Bliss Lab (EBL)</h1></header>
-      <Menu />
+    <AuthProvider>
+      <div className="app">
+        <header className="app-header"><h1>Eternal Bliss Lab (EBL)</h1></header>
+        <Menu />
 
-      <main>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/prayers" element={<SlokaViewer data={[...prayerData,...InvocationSlokas]} pageTitle="Daily Prayers" />} />
-          <Route path="/pranayama" element={<Pranayama />} />
-          <Route path="/yogasana" element={<Yogasana />} />
-          <Route path="/scripture-verses" element={<SwadhayaVerses />} />
-          <Route path="/scripture-audio" element={<SwadhayaAudio />} />
-          <Route path="/bhajans" element={<Bhajans />} />
-          <Route path="/satsanga-audio" element={<SatsangaAudio />} />
-          <Route path="/personal-audio" element={<PersonalAudio />} />
-          <Route path="/devas" element={<SlokaViewer data={suryastakam} pageTitle="Devi/Devata Prayers" />} />
-          <Route path="/wisdom" element={<Wisdom />} />
-          <Route path="/view/:loc/:doc/:type" element={<DocViewer />} />
-          <Route path="/blissful-stuties" element={<BlissfulStuties />} />
-        </Routes>
-      </main>
-      <Footer />
-    </div>
+        <main>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/login" element={<LoginPage />} />
+            <Route path="/prayers" element={<SlokaViewer data={[...prayerData,...InvocationSlokas]} pageTitle="Daily Prayers" />} />
+            <Route path="/pranayama" element={<Pranayama />} />
+            <Route path="/yogasana" element={<Yogasana />} />
+            <Route path="/scripture-verses" element={<SwadhayaVerses />} />
+            <Route path="/scripture-audio" element={<SwadhayaAudio />} />
+            <Route path="/bhajans" element={<Bhajans />} />
+            <Route path="/satsanga-audio" element={<SatsangaAudio />} />
+            <Route path="/personal-audio" element={<ProtectedRoute><PersonalAudio /></ProtectedRoute>} />
+            <Route path="/devas" element={<SlokaViewer data={suryastakam} pageTitle="Devi/Devata Prayers" />} />
+            <Route path="/wisdom" element={<Wisdom />} />
+            <Route path="/view/:loc/:doc/:type" element={<DocViewer />} />
+            <Route path="/blissful-stuties" element={<BlissfulStuties />} />
+            <Route path="/add-sloka" element={<ProtectedRoute><AddSloka /></ProtectedRoute>} />
+            <Route path="/manage-media" element={<ProtectedRoute><MediaManager /></ProtectedRoute>} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </AuthProvider>
   );
 }
 

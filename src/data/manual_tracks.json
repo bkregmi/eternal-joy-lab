@@ -22,8 +22,9 @@
   ],
   "nepali-bhajans": [
     {
-      "name": "Online Nepali Bhajan",
-      "path": "https://bhajan-cdn.com/track-01.mp3"
+      "name": "Kun Mandir Ma Janchau Yatri",
+      "path": "",
+      "youtubeLink": "https://youtu.be/LZWji01oo04?list=RDLZWji01oo04"
     }
   ]
 }

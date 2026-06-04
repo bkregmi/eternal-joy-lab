@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../data/AuthContext';
 
 const Menu = () => {
+  const { user, logout } = useAuth();
   const [isNavCollapsed, setIsNavCollapsed] = useState(true);
   const [openDropdown, setOpenDropdown] = useState(null);
 
@@ -36,7 +38,7 @@ const Menu = () => {
                 <li><Link to="/prayers" onClick={closeAll}>Daily Prayer</Link></li>
                 <li><Link to="/pranayama" onClick={closeAll}>Pranayama</Link></li>
                 <li><Link to="/yogasana" onClick={closeAll}>Yogasana</Link></li>
-                <li><Link to="/personal-audio" onClick={closeAll}>Personal Audio</Link></li>
+                {user && <li><Link to="/personal-audio" onClick={closeAll}>Personal Audio</Link></li>}
                 <li><Link to="/devas" onClick={closeAll}>Devi/Devata Prayers</Link></li>
               </ul>
             </li>
@@ -73,6 +75,8 @@ const Menu = () => {
                 <li className="dropdown-header">Opportunities to Serve</li>
                 <li className="disabled"><a href="#">Community Projects</a></li>
                 <li className="disabled"><a href="#">Volunteer Work</a></li>
+                <li><Link to="/add-sloka" onClick={closeAll}>Add Sloka</Link></li>
+                {user && <li><Link to="/manage-media" onClick={closeAll}>Manage Media</Link></li>}
                 <li><Link to="/" onClick={closeAll}>Home Content</Link></li>
               </ul>
             </li>
@@ -83,13 +87,15 @@ const Menu = () => {
           </ul>
 
           <ul className="nav navbar-nav navbar-right">
-            {/* 
-                Note: On S3, Facebook PHP login logic won't work.
-                You will eventually need a JS-based auth solution or 
-                point these to your existing auth endpoints if they stay on a server.
-            */}
-            <li><a href="#"><span className="glyphicon glyphicon-user"></span> Login</a></li>
-            <li><a href="#"><span className="glyphicon glyphicon-log-in"></span> Logout</a></li>
+            {!user ? (
+              <li><Link to="/login" onClick={closeAll}><span className="glyphicon glyphicon-user"></span> Login</Link></li>
+            ) : (
+              <li>
+                <a href="#" onClick={(e) => { e.preventDefault(); logout(); closeAll(); }}>
+                  <span className="glyphicon glyphicon-log-in"></span> Logout ({user.username})
+                </a>
+              </li>
+            )}
           </ul>
         </div>
       </div>
