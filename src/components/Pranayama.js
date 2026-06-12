@@ -2,11 +2,21 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 
 const Pranayama = () => {
   const [isActive, setIsActive] = useState(false);
-  const [exerciseType, setExerciseType] = useState('mudra'); // 'mudra', 'organ', or 'traditional'
+  const [exerciseType, setExerciseType] = useState('traditional'); // 'mudra', 'organ', or 'traditional'
   const [cycle, setCycle] = useState(1);
   const [mudraIndex, setMudraIndex] = useState(0);
   const [phaseIndex, setPhaseIndex] = useState(0); // 0: Inhale, 1: Hold, 2: Exhale, 3: Hold
   const [count, setCount] = useState(0);
+
+  const typeScrollerRef = useRef(null);
+  const stepScrollerRef = useRef(null);
+
+  const scroll = (ref, direction) => {
+    if (ref.current) {
+      const scrollAmount = direction === 'left' ? -200 : 200;
+      ref.current.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    }
+  };
 
   const mudras = [
     { name: 'Chin Mudra', description: 'Touch the tips of your thumb and index fingers. Keep the other three fingers straight and relaxed. Rest your hands on your knees with palms facing up.' },
@@ -17,9 +27,9 @@ const Pranayama = () => {
 
   const organSteps = [
     { 
-      name: 'Organ Breathing - Step 1', 
-      description: 'Ratio: 4-16-8-4. Focus on deep internal circulation.',
-      cycles: 5,
+      name: 'Lungs', 
+      description: 'Ratio: 4-16-8-4. Use Chin, Chinmaya, and Aadhi Mudras (3 cycles each).',
+      cycles: 9,
       phases: [
         { name: 'Inhale', max: 4, color: '#2ecc71' },
         { name: 'Hold', max: 16, color: '#f1c40f' },
@@ -28,9 +38,9 @@ const Pranayama = () => {
       ]
     },
     { 
-      name: 'Organ Breathing - Step 2', 
-      description: 'Ratio: 4-4-16-8. Shifting the retention focus.',
-      cycles: 5,
+      name: 'Liver', 
+      description: 'Ratio: 4-4-16-8. Use Chin Mudra.',
+      cycles: 7,
       phases: [
         { name: 'Inhale', max: 4, color: '#2ecc71' },
         { name: 'Hold', max: 4, color: '#f1c40f' },
@@ -39,9 +49,9 @@ const Pranayama = () => {
       ]
     },
     { 
-      name: 'Organ Breathing - Step 3', 
-      description: 'Ratio: 8-4-4-16. Extending the initial intake.',
-      cycles: 5,
+      name: 'Stomach', 
+      description: 'Ratio: 8-4-4-16. Use Chin Mudra.',
+      cycles: 7,
       phases: [
         { name: 'Inhale', max: 8, color: '#2ecc71' },
         { name: 'Hold', max: 4, color: '#f1c40f' },
@@ -50,9 +60,9 @@ const Pranayama = () => {
       ]
     },
     { 
-      name: 'Organ Breathing - Step 4', 
-      description: 'Ratio: 16-8-4-4. Focus on long controlled inhalation.',
-      cycles: 5,
+      name: 'Kidney', 
+      description: 'Ratio: 16-8-4-4. Use Chin Mudra.',
+      cycles: 7,
       phases: [
         { name: 'Inhale', max: 16, color: '#2ecc71' },
         { name: 'Hold', max: 8, color: '#f1c40f' },
@@ -61,9 +71,9 @@ const Pranayama = () => {
       ]
     },
     { 
-      name: 'Heart Breathing', 
-      description: 'Ratio: 4-16-8. Special sequence with no empty hold after exhale.',
-      cycles: 5,
+      name: 'Heart', 
+      description: 'Ratio: 4-16-8. Use Chinmaya Mudra.',
+      cycles: 7,
       phases: [
         { name: 'Inhale', max: 4, color: '#2ecc71' },
         { name: 'Hold', max: 16, color: '#f1c40f' },
@@ -74,20 +84,20 @@ const Pranayama = () => {
 
   const traditionalSteps = [
     {
-      name: 'Anulom-Vilom (Alternate Nostril)',
-      description: 'Balances energy channels. Inhale left, exhale right; inhale right, exhale left. Focus on smooth, controlled breathing.',
-      cycles: 5, // 5 full rounds (left-right, right-left)
+      name: 'Sukh Kriya',
+      description: 'Balances energy channels (also known as Anulom-Vilom). Inhale left, exhale right; inhale right, exhale left. Focus on smooth, equalized breathing.',
+      cycles: 26, // 26 cycles of 16s ≈ 7 minutes
       phases: [
         { name: 'Inhale Left', max: 4, color: '#2ecc71' },
-        { name: 'Exhale Right', max: 8, color: '#3498db' },
+        { name: 'Exhale Right', max: 4, color: '#3498db' },
         { name: 'Inhale Right', max: 4, color: '#2ecc71' },
-        { name: 'Exhale Left', max: 8, color: '#3498db' },
+        { name: 'Exhale Left', max: 4, color: '#3498db' },
       ]
     },
     {
       name: 'Bhastrika (Bellows Breath)',
       description: 'Rapid, forceful inhalations and exhalations. Energizing. Perform 20-30 rapid breaths per round within the timed phase.',
-      cycles: 3, // 3 rounds of Bhastrika
+      cycles: 7, // 7 rounds of Bhastrika
       phases: [
         { name: 'Rapid Breathing', max: 30, color: '#e74c3c' }, // 30 seconds of rapid breathing
         { name: 'Rest', max: 10, color: '#bdc3c7' } // 10 seconds rest between rounds
@@ -96,7 +106,7 @@ const Pranayama = () => {
     {
       name: 'Kapalbhati (Skull Shining Breath)',
       description: 'Forceful exhalations, passive inhalations. Cleansing. Perform 20-30 forceful exhalations per round within the timed phase.',
-      cycles: 3, // 3 rounds of Kapalbhati
+      cycles: 7, // 7 rounds of Kapalbhati
       phases: [
         { name: 'Forceful Exhale', max: 30, color: '#9b59b6' }, // 30 seconds of forceful exhalations
         { name: 'Rest', max: 10, color: '#bdc3c7' } // 10 seconds rest between rounds
@@ -104,17 +114,15 @@ const Pranayama = () => {
     },
     {
       name: 'Nadi Shodhana (Purification)',
-      description: 'Advanced alternate nostril breathing with retention. Ratio 1:4:2. Inhale left, hold, exhale right, hold; inhale right, hold, exhale left, hold.',
-      cycles: 3,
+      description: 'Advanced alternate nostril breathing with internal retention (Antar Kumbhaka). Ratio 1:4:2. Inhale left, hold, exhale right; inhale right, hold, exhale left.',
+      cycles: 7,
       phases: [
         { name: 'Inhale Left', max: 4, color: '#2ecc71' },
         { name: 'Hold', max: 16, color: '#f1c40f' },
         { name: 'Exhale Right', max: 8, color: '#3498db' },
-        { name: 'Hold', max: 4, color: '#e67e22' },
         { name: 'Inhale Right', max: 4, color: '#2ecc71' },
         { name: 'Hold', max: 16, color: '#f1c40f' },
-        { name: 'Exhale Left', max: 8, color: '#3498db' },
-        { name: 'Hold', max: 4, color: '#e67e22' }
+        { name: 'Exhale Left', max: 8, color: '#3498db' }
       ]
     }
   ];
@@ -179,10 +187,19 @@ const Pranayama = () => {
       // Introduce a 500ms delay to create a natural gap after the visual update
       const speechTimer = setTimeout(() => {
         const activePhases = exerciseType === 'mudra' ? phases : activeData[mudraIndex].phases;
-        if (count === 1) {
-          speak(`${activePhases[phaseIndex].name}. 1`);
+        const isSukhKriya = exerciseType === 'traditional' && activeData[mudraIndex]?.name === 'Sukh Kriya';
+
+        if (isSukhKriya) {
+          if (count === 1) {
+            const text = activePhases[phaseIndex].name.toLowerCase().includes('inhale') ? 'In' : 'Out';
+            speak(text);
+          }
         } else {
-          speak(count.toString());
+          if (count === 1) {
+            speak(`${activePhases[phaseIndex].name}. 1`);
+          } else {
+            speak(count.toString());
+          }
         }
       }, 500);
 
@@ -229,7 +246,7 @@ const Pranayama = () => {
           
           return nextCount;
         });
-      }, 2000); // Ticks every 2 seconds as requested
+      }, 1000); // Ticks every 1 second
     }
     return () => clearInterval(timer);
   }, [isActive, speak]);
@@ -273,43 +290,107 @@ const Pranayama = () => {
       <div className="row">
         <div className="col-md-8 col-md-offset-2">
           <section className="whiteBG" style={{ padding: '30px', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
-            <div className="section-selector text-center" style={{ marginBottom: '30px' }}>
-              <button 
-                className={`btn p-btn ${exerciseType === 'mudra' ? 'btn-primary' : 'btn-default'}`} 
-                onClick={() => { resetExercise(); setExerciseType('mudra'); }}
-                style={exerciseType === 'mudra' ? { backgroundColor: '#ff9933', borderColor: '#ff9933' } : {}}
-              >Mudra Pranayama</button>
-              <button 
-                className={`btn p-btn ${exerciseType === 'organ' ? 'btn-primary' : 'btn-default'}`} 
-                style={exerciseType === 'organ' ? { margin: '0 10px', backgroundColor: '#ff9933', borderColor: '#ff9933' } : { margin: '0 10px' }}
-                onClick={() => { resetExercise(); setExerciseType('organ'); }}
-              >Organ Breathing</button>
-              <button 
-                className={`btn p-btn ${exerciseType === 'traditional' ? 'btn-primary' : 'btn-default'}`} 
-                onClick={() => { resetExercise(); setExerciseType('traditional'); }}
-                style={exerciseType === 'traditional' ? { backgroundColor: '#ff9933', borderColor: '#ff9933' } : {}}
-              >Traditional Pranayama</button>
+            {/* Horizontal Scrolling for Category Selection */}
+            <div className="section-selector-container" style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              marginBottom: '30px',
+              background: '#fff',
+              padding: '10px',
+              borderRadius: '15px',
+              boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
+              border: '1px solid #f0e6d2'
+            }}>
+              <button className="btn btn-default" onClick={() => scroll(typeScrollerRef, 'left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
+              <div ref={typeScrollerRef} style={{ 
+                display: 'flex', 
+                overflowX: 'auto', 
+                whiteSpace: 'nowrap', 
+                flex: 1, 
+                margin: '0 10px',
+                msOverflowStyle: 'none',
+                scrollbarWidth: 'none'
+              }}>
+                <style>{`div::-webkit-scrollbar { display: none; }`}</style>
+                <button 
+                  className={`btn p-btn ${exerciseType === 'mudra' ? 'btn-primary' : 'btn-default'}`} 
+                  onClick={() => { resetExercise(); setExerciseType('mudra'); }}
+                  style={{ 
+                    marginRight: '10px', 
+                    flexShrink: 0,
+                    backgroundColor: exerciseType === 'mudra' ? '#ff9933' : '#fff',
+                    borderColor: '#ff9933',
+                    color: exerciseType === 'mudra' ? '#fff' : '#ff9933'
+                  }}
+                >Mudra Kriya</button>
+                <button 
+                  className={`btn p-btn ${exerciseType === 'organ' ? 'btn-primary' : 'btn-default'}`} 
+                  onClick={() => { resetExercise(); setExerciseType('organ'); }}
+                  style={{ 
+                    marginRight: '10px', 
+                    flexShrink: 0,
+                    backgroundColor: exerciseType === 'organ' ? '#ff9933' : '#fff',
+                    borderColor: '#ff9933',
+                    color: exerciseType === 'organ' ? '#fff' : '#ff9933'
+                  }}
+                >Organ Breathing</button>
+                <button 
+                  className={`btn p-btn ${exerciseType === 'traditional' ? 'btn-primary' : 'btn-default'}`} 
+                  onClick={() => { resetExercise(); setExerciseType('traditional'); }}
+                  style={{ 
+                    marginRight: '10px', 
+                    flexShrink: 0,
+                    backgroundColor: exerciseType === 'traditional' ? '#ff9933' : '#fff',
+                    borderColor: '#ff9933',
+                    color: exerciseType === 'traditional' ? '#fff' : '#ff9933'
+                  }}
+                >Traditional Pranayama</button>
+              </div>
+              <button className="btn btn-default" onClick={() => scroll(typeScrollerRef, 'right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
             </div>
 
-            <div className="step-selector text-center" style={{ marginBottom: '20px', display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '8px' }}>
-              {activeData.map((step, idx) => (
-                <button
-                  key={idx}
-                  className={`btn btn-xs ${mudraIndex === idx ? 'btn-info' : 'btn-link'}`}
-                  style={{ 
-                    borderRadius: '12px', 
-                    padding: '4px 12px',
-                    color: mudraIndex === idx ? '#fff' : '#888'
-                  }}
-                  onClick={() => { resetExercise(); setMudraIndex(idx); }}
-                >
-                  {idx + 1}. {step.name}
-                </button>
-              ))}
+            {/* Horizontal Scrolling for Individual Pranayama Selection */}
+            <div className="step-selector-container" style={{ 
+              display: 'flex', 
+              alignItems: 'center', 
+              marginBottom: '20px',
+              background: '#fcfaf5',
+              padding: '5px',
+              borderRadius: '15px'
+            }}>
+              <button className="btn btn-link btn-xs" onClick={() => scroll(stepScrollerRef, 'left')}>&lt;</button>
+              <div ref={stepScrollerRef} style={{ 
+                display: 'flex', 
+                overflowX: 'auto', 
+                whiteSpace: 'nowrap', 
+                flex: 1, 
+                margin: '0 10px',
+                msOverflowStyle: 'none',
+                scrollbarWidth: 'none'
+              }}>
+                {activeData.map((step, idx) => (
+                  <button
+                    key={idx}
+                    className={`btn btn-xs ${mudraIndex === idx ? 'btn-info' : 'btn-link'}`}
+                    style={{ 
+                      borderRadius: '12px', 
+                      padding: '4px 15px',
+                      marginRight: '8px',
+                      flexShrink: 0,
+                      backgroundColor: mudraIndex === idx ? '#5bc0de' : 'transparent',
+                      color: mudraIndex === idx ? '#fff' : '#888'
+                    }}
+                    onClick={() => { resetExercise(); setMudraIndex(idx); }}
+                  >
+                    {step.name}
+                  </button>
+                ))}
+              </div>
+              <button className="btn btn-link btn-xs" onClick={() => scroll(stepScrollerRef, 'right')}>&gt;</button>
             </div>
 
             <h2 className="text-center" style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginBottom: '25px' }}>
-              {exerciseType === 'mudra' ? 'Mudra Pranayama' : exerciseType === 'organ' ? 'Organ Breathing' : 'Traditional Pranayama'}
+              {exerciseType === 'mudra' ? 'Mudra Kriya' : exerciseType === 'organ' ? 'Organ Breathing' : 'Traditional Pranayama'}
             </h2>
             
             <div className="mudra-info" style={{ 
@@ -347,9 +428,8 @@ const Pranayama = () => {
               {!isActive ? (
                 <button className="btn btn-success btn-lg p-btn" onClick={() => {
                     setCount(1);
-                    setMudraIndex(0);
                     setIsActive(true);
-                    speak(`Starting ${activeData[0].name}`);
+                    speak(`Starting ${activeData[mudraIndex].name}`);
                   }}
                 >
                   Start Exercise
