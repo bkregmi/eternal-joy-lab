@@ -41,7 +41,7 @@ const MediaManager = () => {
           console.error("API Error Response:", errorData);
         }
       } catch (err) {
-        console.error('Connection Error:', err);
+        console.error('Sync Connection Error:', err);
       }
     }
   };

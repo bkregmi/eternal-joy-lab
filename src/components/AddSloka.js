@@ -31,6 +31,13 @@ const AddSloka = () => {
     const jsonString = JSON.stringify(newEntry, null, 2);
     setGeneratedJson(jsonString);
 
+    // FAST TESTING: If developing locally, log the payload and skip the network call
+    if (process.env.NODE_ENV === 'development') {
+      console.log("DEV MODE: Payload that would be sent to Lambda:", { filePath: `src/data/${category}.json`, newEntry, type: 'array-push' });
+      setStatus({ type: 'success', message: '✅ [DEV] Logic verified. Check console for payload.' });
+      return;
+    }
+
     // If the user is authenticated, attempt to push directly to GitHub via the API Bridge
     if (user) {
       try {
@@ -52,10 +59,8 @@ const AddSloka = () => {
           // Reset form on success
           setTitle(''); setSanskrit(''); setEnglish(''); setMeaning('');
         } else {
-          // Parse the error response from the Lambda to get the actual cause
-          const errorText = await response.text();
-          const errorData = JSON.parse(errorText || '{}');
-          throw new Error(errorData.message || errorData.error || `Server returned ${response.status}`);
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(errorData.error || errorData.message || `Server returned ${response.status}`);
         }
       } catch (err) {
         console.error("Sync Error Details:", err);
