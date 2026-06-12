@@ -52,11 +52,13 @@ const AddSloka = () => {
           // Reset form on success
           setTitle(''); setSanskrit(''); setEnglish(''); setMeaning('');
         } else {
-          throw new Error('Sync failed');
+          // Parse the error response from the Lambda to get the actual cause
+          const errorData = await response.json().catch(() => ({}));
+          throw new Error(errorData.message || errorData.error || 'Sync failed');
         }
       } catch (err) {
         console.error("Sync Error Details:", err);
-        setStatus({ type: 'danger', message: 'Auto-sync failed. Please manually add the JSON snippet below.' });
+        setStatus({ type: 'danger', message: `Sync failed: ${err.message}. Please manually add the snippet below.` });
       }
     } else {
       setStatus({ type: 'success', message: 'JSON Generated! Copy the code below and add it to your data file.' });
