@@ -1,13 +1,15 @@
 import React, { useState } from 'react';
+import { useAuth } from '../data/AuthContext';
 
 const MediaManager = () => {
+  const { user } = useAuth();
   const [category, setCategory] = useState('personal');
   const [name, setName] = useState('');
   const [path, setPath] = useState('');
   const [youtubeLink, setYoutubeLink] = useState('');
   const [generatedJson, setGeneratedJson] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     const entry = {
@@ -22,6 +24,24 @@ const MediaManager = () => {
     };
 
     setGeneratedJson(JSON.stringify(output, null, 2));
+
+    if (user) {
+      try {
+        const response = await fetch('https://mr36ku54ql.execute-api.us-east-1.amazonaws.com/update', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ 
+            filePath: 'src/data/manual_tracks.json', 
+            newEntry: output 
+          })
+        });
+        if (response.ok) {
+          alert('Media entry successfully committed to GitHub!');
+        }
+      } catch (err) {
+        console.error('Failed to sync media entry:', err);
+      }
+    }
   };
 
   return (

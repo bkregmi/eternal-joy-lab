@@ -16,17 +16,15 @@ export const AuthProvider = ({ children }) => {
   }, []);
 
   const login = (username, password) => {
-    const expectedUser = process.env.REACT_APP_ADMIN_USERNAME;
-    const expectedPass = process.env.REACT_APP_ADMIN_PASSWORD;
+    const expectedUser = process.env.REACT_APP_ADMIN_USERNAME || "";
+    const expectedPass = process.env.REACT_APP_ADMIN_PASSWORD || "";
 
-    // Diagnostic: If this error appears in the browser console (F12), 
-    // the server definitely hasn't picked up your .env file.
     if (!expectedUser || !expectedPass) {
       console.error("Login failed: REACT_APP_ADMIN variables are undefined. Please restart 'npm start'.");
       return false;
     }
 
-    if (username.trim().toLowerCase() === expectedUser.toLowerCase() && password.trim() === expectedPass) {
+    if (username && password && username.trim().toLowerCase() === expectedUser.toLowerCase() && password.trim() === expectedPass) {
       const userData = { username: username.trim(), role: 'admin' };
       setUser(userData);
       localStorage.setItem('user', JSON.stringify(userData));

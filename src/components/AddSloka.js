@@ -30,7 +30,33 @@ const AddSloka = () => {
 
     const jsonString = JSON.stringify(newEntry, null, 2);
     setGeneratedJson(jsonString);
-    setStatus({ type: 'success', message: 'JSON Generated! Copy the code below and add it to your data file.' });
+
+    // If the user is authenticated, attempt to push directly to GitHub via the API Bridge
+    if (user) {
+      try {
+        setStatus({ type: 'info', message: 'Syncing with GitHub repository...' });
+        const response = await fetch('https://mr36ku54ql.execute-api.us-east-1.amazonaws.com/update', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({ 
+            filePath: `src/data/${category}.json`, 
+            newEntry: newEntry 
+          })
+        });
+
+        if (response.ok) {
+          setStatus({ type: 'success', message: 'Success! Sloka committed to GitHub. Changes will appear in a few minutes.' });
+        } else {
+          throw new Error('Sync failed');
+        }
+      } catch (err) {
+        setStatus({ type: 'danger', message: 'Auto-sync failed. Please manually add the JSON snippet below.' });
+      }
+    } else {
+      setStatus({ type: 'success', message: 'JSON Generated! Copy the code below and add it to your data file.' });
+    }
   };
 
   const copyToClipboard = () => {

@@ -27,6 +27,7 @@ jobs:
       - name: Install and Build
         run: |
           npm install
+          node src/data/generate-playlist.js
           npm run build
 
       - name: Configure AWS  Credentials
