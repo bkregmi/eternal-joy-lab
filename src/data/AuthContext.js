@@ -13,11 +13,6 @@ export const AuthProvider = ({ children }) => {
       setUser(JSON.parse(savedUser));
     }
 
-    // Diagnostic check for environment variables (safe check)
-    console.log("Auth System Initialization:");
-    console.log("- Admin Username (Length):", (process.env.REACT_APP_ADMIN_USERNAME || "").length);
-    console.log("- Admin Password (Length):", (process.env.REACT_APP_ADMIN_PASSWORD || "").length);
-
     setLoading(false);
   }, []);
 

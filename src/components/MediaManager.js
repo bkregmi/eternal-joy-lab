@@ -36,9 +36,12 @@ const MediaManager = () => {
         if (response.ok) {
           alert('✅ Media entry committed! Site will update shortly.');
           setName(''); setPath(''); setYoutubeLink('');
+        } else {
+          const errorData = await response.json().catch(() => ({}));
+          console.error("API Error Response:", errorData);
         }
       } catch (err) {
-        console.error('Failed to sync media entry:', err);
+        console.error('Connection Error:', err);
       }
     }
   };

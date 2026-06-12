@@ -55,6 +55,7 @@ const AddSloka = () => {
           throw new Error('Sync failed');
         }
       } catch (err) {
+        console.error("Sync Error Details:", err);
         setStatus({ type: 'danger', message: 'Auto-sync failed. Please manually add the JSON snippet below.' });
       }
     } else {
