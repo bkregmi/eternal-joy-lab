@@ -53,12 +53,13 @@ const AddSloka = () => {
           setTitle(''); setSanskrit(''); setEnglish(''); setMeaning('');
         } else {
           // Parse the error response from the Lambda to get the actual cause
-          const errorData = await response.json().catch(() => ({}));
-          throw new Error(errorData.message || errorData.error || 'Sync failed');
+          const errorText = await response.text();
+          const errorData = JSON.parse(errorText || '{}');
+          throw new Error(errorData.message || errorData.error || `Server returned ${response.status}`);
         }
       } catch (err) {
         console.error("Sync Error Details:", err);
-        setStatus({ type: 'danger', message: `Sync failed: ${err.message}. Please manually add the snippet below.` });
+        setStatus({ type: 'danger', message: `Sync failed: ${err.message}` });
       }
     } else {
       setStatus({ type: 'success', message: 'JSON Generated! Copy the code below and add it to your data file.' });
