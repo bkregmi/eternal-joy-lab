@@ -12,15 +12,21 @@ export const AuthProvider = ({ children }) => {
     if (savedUser) {
       setUser(JSON.parse(savedUser));
     }
+
+    // Diagnostic check for environment variables (safe check)
+    console.log("Auth System Initialization:");
+    console.log("- Admin Username Detected:", !!process.env.REACT_APP_ADMIN_USERNAME);
+    console.log("- Admin Password Detected:", !!process.env.REACT_APP_ADMIN_PASSWORD);
+
     setLoading(false);
   }, []);
 
   const login = (username, password) => {
-    const expectedUser = process.env.REACT_APP_ADMIN_USERNAME || "";
-    const expectedPass = process.env.REACT_APP_ADMIN_PASSWORD || "";
+    const expectedUser = (process.env.REACT_APP_ADMIN_USERNAME || "").trim();
+    const expectedPass = (process.env.REACT_APP_ADMIN_PASSWORD || "").trim();
 
     if (!expectedUser || !expectedPass) {
-      console.error("Login failed: REACT_APP_ADMIN variables are undefined. Please restart 'npm start'.");
+      console.error("Login Error: REACT_APP_ADMIN_USERNAME or PASSWORD variables are missing from the build. Check your GitHub Secrets or local .env file.");
       return false;
     }
 
@@ -30,6 +36,7 @@ export const AuthProvider = ({ children }) => {
       localStorage.setItem('user', JSON.stringify(userData));
       return true;
     }
+    console.warn("Invalid credentials attempted.");
     return false;
   };
 

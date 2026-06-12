@@ -18,12 +18,8 @@ const MediaManager = () => {
       ...(youtubeLink && { youtubeLink: youtubeLink.trim() })
     };
 
-    // Format as a partial object for manual_tracks.json
-    const output = {
-      [category]: [entry]
-    };
-
-    setGeneratedJson(JSON.stringify(output, null, 2));
+    const jsonString = JSON.stringify(entry, null, 2);
+    setGeneratedJson(jsonString);
 
     if (user) {
       try {
@@ -32,11 +28,14 @@ const MediaManager = () => {
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ 
             filePath: 'src/data/manual_tracks.json', 
-            newEntry: output 
+            newEntry: entry,
+            category: category,
+            type: 'object-merge'
           })
         });
         if (response.ok) {
-          alert('Media entry successfully committed to GitHub!');
+          alert('✅ Media entry committed! Site will update shortly.');
+          setName(''); setPath(''); setYoutubeLink('');
         }
       } catch (err) {
         console.error('Failed to sync media entry:', err);

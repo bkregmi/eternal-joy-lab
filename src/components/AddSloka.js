@@ -34,7 +34,7 @@ const AddSloka = () => {
     // If the user is authenticated, attempt to push directly to GitHub via the API Bridge
     if (user) {
       try {
-        setStatus({ type: 'info', message: 'Syncing with GitHub repository...' });
+        setStatus({ type: 'warning', message: 'Syncing with GitHub... please wait.' });
         const response = await fetch('https://mr36ku54ql.execute-api.us-east-1.amazonaws.com/update', {
           method: 'POST',
           headers: {
@@ -42,12 +42,15 @@ const AddSloka = () => {
           },
           body: JSON.stringify({ 
             filePath: `src/data/${category}.json`, 
-            newEntry: newEntry 
+            newEntry: newEntry,
+            type: 'array-push'
           })
         });
 
         if (response.ok) {
-          setStatus({ type: 'success', message: 'Success! Sloka committed to GitHub. Changes will appear in a few minutes.' });
+          setStatus({ type: 'success', message: '✅ Sloka committed! Site will update in ~2 minutes.' });
+          // Reset form on success
+          setTitle(''); setSanskrit(''); setEnglish(''); setMeaning('');
         } else {
           throw new Error('Sync failed');
         }
@@ -129,8 +132,8 @@ const AddSloka = () => {
           />
         </div>
 
-        <button type="submit" className="btn btn-primary" style={{ backgroundColor: '#ff9933', borderColor: '#ff9933', borderRadius: '20px', padding: '10px 25px' }}>
-          Generate JSON
+        <button type="submit" className="btn btn-primary" style={{ backgroundColor: user ? '#5cb85c' : '#ff9933', borderColor: user ? '#4cae4c' : '#ff9933', borderRadius: '20px', padding: '10px 25px' }}>
+          {user ? '🚀 Submit to GitHub' : 'Generate JSON Snippet'}
         </button>
       </form>
 

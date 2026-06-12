@@ -29,6 +29,10 @@ jobs:
           npm install
           node src/data/generate-playlist.js
           npm run build
+        env:
+          CI: false
+          REACT_APP_ADMIN_USERNAME: ${{ secrets.REACT_APP_ADMIN_USERNAME }}
+          REACT_APP_ADMIN_PASSWORD: ${{ secrets.REACT_APP_ADMIN_PASSWORD }}
 
       - name: Configure AWS  Credentials
         uses: aws-actions/configure-aws-credentials@v4
