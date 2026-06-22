@@ -52,7 +52,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
     <div className="sloka-viewer-page" style={pageStyle}>
       <div className="container-fluid" style={{ padding: '0 15px' }}>
         <div className="row">
-          <div className="col-xs-12 text-center" style={{ marginBottom: '5px' }}>
+          <div className="col-12 text-center" style={{ marginBottom: '5px' }}>
             <h1 style={{ color: '#c92200', fontSize: '2em', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginTop: '5px' }}>
               {pageTitle}
             </h1>
@@ -61,7 +61,7 @@ const SlokaViewer = ({ data, pageTitle }) => {
         </div>
 
         <div className="row">
-          <div className="col-xs-12">
+          <div className="col-12">
             <div className="controls" style={controlSectionStyle}>
                 <label style={checkboxStyle}>
                   <input type="checkbox" style={{ marginRight: '5px' }} checked={visibility.sanskrit} onChange={() => toggleVisibility('sanskrit')} />

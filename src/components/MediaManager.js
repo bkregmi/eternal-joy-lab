@@ -54,7 +54,7 @@ const MediaManager = () => {
       <div className="row">
         <div className="col-md-6">
           <form onSubmit={handleSubmit}>
-            <div className="form-group">
+            <div className="mb-3">
               <label>Category</label>
               <select className="form-control" value={category} onChange={(e) => setCategory(e.target.value)}>
                 <option value="personal">Personal Audio</option>
@@ -64,7 +64,7 @@ const MediaManager = () => {
               </select>
             </div>
 
-            <div className="form-group">
+            <div className="mb-3">
               <label>Track Name</label>
               <input 
                 type="text" 
@@ -76,7 +76,7 @@ const MediaManager = () => {
               />
             </div>
 
-            <div className="form-group">
+            <div className="mb-3">
               <label>Local Path (Relative to Public)</label>
               <input 
                 type="text" 
@@ -88,7 +88,7 @@ const MediaManager = () => {
               <small className="text-info">Leave empty if using only YouTube.</small>
             </div>
 
-            <div className="form-group">
+            <div className="mb-3">
               <label>YouTube Link (Optional)</label>
               <input 
                 type="url" 
@@ -107,12 +107,12 @@ const MediaManager = () => {
 
         <div className="col-md-6">
           {generatedJson && (
-            <div className="panel panel-info">
-              <div className="panel-heading">JSON Snippet</div>
-              <div className="panel-body">
+            <div className="card border-info">
+              <div className="card-header">JSON Snippet</div>
+              <div className="card-body">
                 <pre style={{ fontSize: '0.85em' }}>{generatedJson}</pre>
                 <button 
-                  className="btn btn-default btn-sm"
+                  className="btn btn-secondary btn-sm"
                   onClick={() => navigator.clipboard.writeText(generatedJson)}
                 >
                   Copy to Clipboard

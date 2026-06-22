@@ -189,7 +189,7 @@ const Yogasana = () => {
               {Object.keys(yogaPractices).map((key) => (
                 <button 
                   key={key}
-                  className={`btn ${activeTab === key ? 'btn-primary' : 'btn-default'}`} 
+                  className={`btn ${activeTab === key ? 'btn-primary' : 'btn-secondary'}`} 
                   style={{ marginRight: '10px', marginBottom: '10px' }}
                   onClick={() => setActiveTab(key)}
                 >
@@ -220,7 +220,7 @@ const Yogasana = () => {
                 <ul className="list-group" style={{ margin: 0 }}>
                   {current.features.map((feature, idx) => (
                     <li key={idx} className="list-group-item" style={{ border: 'none', backgroundColor: 'transparent', fontSize: '1.1em' }}>
-                      <span className="glyphicon glyphicon-ok" style={{ color: '#27ae60', marginRight: '10px' }}></span>
+                      <span className="bi bi-check-circle-fill" style={{ color: '#27ae60', marginRight: '10px' }}></span>
                       {feature}
                     </li>
                   ))}

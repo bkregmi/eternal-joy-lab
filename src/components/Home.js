@@ -11,7 +11,7 @@ const PillarCard = ({ title, letter, color, description, labelClass }) => (
       borderTop: `4px solid ${color}`
     }}>
       <h3 style={{ color: '#2c3e50', marginTop: 0 }}>
-        <span className={`label ${labelClass}`} style={{ marginRight: '10px', borderRadius: '50%', padding: '5px 12px' }}>
+        <span className={`badge ${labelClass.replace('label-', 'text-bg-')}`} style={{ marginRight: '10px', borderRadius: '50%', padding: '5px 12px' }}>
           {letter}
         </span>
         {title}
@@ -28,7 +28,7 @@ function Home() {
     {
       letter: 'S',
       title: 'adhana',
-      labelClass: 'label-primary',
+      labelClass: 'label-primary', // maps to text-bg-primary
       color: '#3498db',
       description: (
         <>
@@ -40,7 +40,7 @@ function Home() {
     {
       letter: 'S',
       title: 'wadhaya',
-      labelClass: 'label-success',
+      labelClass: 'label-success', // maps to text-bg-success
       color: '#27ae60',
       description: (
         <>
@@ -52,7 +52,7 @@ function Home() {
     {
       letter: 'S',
       title: 'atsanga',
-      labelClass: 'label-warning',
+      labelClass: 'label-warning', // maps to text-bg-warning
       color: '#f39c12',
       description: (
         <>
@@ -63,7 +63,7 @@ function Home() {
     {
       letter: 'S',
       title: 'ewa',
-      labelClass: 'label-danger',
+      labelClass: 'label-danger', // maps to text-bg-danger
       color: '#e74c3c',
       description: (
         <>
@@ -120,7 +120,7 @@ function Home() {
             "Joseph Benner",
             "Sri Premanand Ji Maharaj"
           ].map((name, idx) => (
-            <div key={idx} className="col-xs-12 col-sm-6 col-md-4" style={{ marginBottom: '15px' }}>
+            <div key={idx} className="col-12 col-sm-6 col-md-4" style={{ marginBottom: '15px' }}>
               <div style={{ 
                 padding: '15px', 
                 background: '#fff', 

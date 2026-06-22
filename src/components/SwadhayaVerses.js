@@ -68,7 +68,7 @@ const SwadhayaVerses = () => {
         zIndex: 100,
         border: '1px solid #f0e6d2'
       }}>
-        <button className="btn btn-default" onClick={() => scroll('left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
+        <button className="btn btn-secondary" onClick={() => scroll('left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
         
         <div ref={scrollerRef} style={{ 
           display: 'flex', 
@@ -83,7 +83,7 @@ const SwadhayaVerses = () => {
           {Object.keys(scriptures).map((key) => (
             <button 
               key={key}
-              className={`btn ${activeTab === key ? 'btn-primary' : 'btn-default'}`} 
+              className={`btn ${activeTab === key ? 'btn-primary' : 'btn-secondary'}`} 
               style={{ 
                 marginRight: '10px', 
                 flexShrink: 0,
@@ -98,7 +98,7 @@ const SwadhayaVerses = () => {
           ))}
         </div>
 
-        <button className="btn btn-default" onClick={() => scroll('right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
+        <button className="btn btn-secondary" onClick={() => scroll('right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
       </div>
 
       <SlokaViewer data={scriptures[activeTab].data} pageTitle={scriptures[activeTab].title} />

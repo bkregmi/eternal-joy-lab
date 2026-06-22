@@ -3,13 +3,8 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App';
 import './index.css';
-
-// Dynamically load Bootstrap 3 from a CDN to resolve the "Module not found" error.
-// This bypasses the need for a local 'npm install bootstrap@3'.
-const bootstrapLink = document.createElement('link');
-bootstrapLink.rel = 'stylesheet';
-bootstrapLink.href = 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css';
-document.head.appendChild(bootstrapLink);
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

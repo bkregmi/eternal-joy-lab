@@ -288,7 +288,7 @@ const Pranayama = () => {
         .p-btn:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
       `}</style>
       <div className="row">
-        <div className="col-md-8 col-md-offset-2">
+        <div className="col-md-8 offset-md-2">
           <section className="whiteBG" style={{ padding: '30px', borderRadius: '20px', boxShadow: '0 10px 30px rgba(0,0,0,0.05)' }}>
             {/* Horizontal Scrolling for Category Selection */}
             <div className="section-selector-container" style={{ 
@@ -301,7 +301,7 @@ const Pranayama = () => {
               boxShadow: '0 2px 10px rgba(0,0,0,0.05)',
               border: '1px solid #f0e6d2'
             }}>
-              <button className="btn btn-default" onClick={() => scroll(typeScrollerRef, 'left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
+              <button className="btn btn-secondary" onClick={() => scroll(typeScrollerRef, 'left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
               <div ref={typeScrollerRef} style={{ 
                 display: 'flex', 
                 overflowX: 'auto', 
@@ -313,7 +313,7 @@ const Pranayama = () => {
               }}>
                 <style>{`div::-webkit-scrollbar { display: none; }`}</style>
                 <button 
-                  className={`btn p-btn ${exerciseType === 'mudra' ? 'btn-primary' : 'btn-default'}`} 
+                  className={`btn p-btn ${exerciseType === 'mudra' ? 'btn-primary' : 'btn-secondary'}`} 
                   onClick={() => { resetExercise(); setExerciseType('mudra'); }}
                   style={{ 
                     marginRight: '10px', 
@@ -324,7 +324,7 @@ const Pranayama = () => {
                   }}
                 >Mudra Kriya</button>
                 <button 
-                  className={`btn p-btn ${exerciseType === 'organ' ? 'btn-primary' : 'btn-default'}`} 
+                  className={`btn p-btn ${exerciseType === 'organ' ? 'btn-primary' : 'btn-secondary'}`} 
                   onClick={() => { resetExercise(); setExerciseType('organ'); }}
                   style={{ 
                     marginRight: '10px', 
@@ -335,7 +335,7 @@ const Pranayama = () => {
                   }}
                 >Organ Breathing</button>
                 <button 
-                  className={`btn p-btn ${exerciseType === 'traditional' ? 'btn-primary' : 'btn-default'}`} 
+                  className={`btn p-btn ${exerciseType === 'traditional' ? 'btn-primary' : 'btn-secondary'}`} 
                   onClick={() => { resetExercise(); setExerciseType('traditional'); }}
                   style={{ 
                     marginRight: '10px', 
@@ -346,7 +346,7 @@ const Pranayama = () => {
                   }}
                 >Traditional Pranayama</button>
               </div>
-              <button className="btn btn-default" onClick={() => scroll(typeScrollerRef, 'right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
+              <button className="btn btn-secondary" onClick={() => scroll(typeScrollerRef, 'right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
             </div>
 
             {/* Horizontal Scrolling for Individual Pranayama Selection */}
@@ -358,7 +358,7 @@ const Pranayama = () => {
               padding: '5px',
               borderRadius: '15px'
             }}>
-              <button className="btn btn-link btn-xs" onClick={() => scroll(stepScrollerRef, 'left')}>&lt;</button>
+              <button className="btn btn-link btn-sm" onClick={() => scroll(stepScrollerRef, 'left')}>&lt;</button>
               <div ref={stepScrollerRef} style={{ 
                 display: 'flex', 
                 overflowX: 'auto', 
@@ -371,7 +371,7 @@ const Pranayama = () => {
                 {activeData.map((step, idx) => (
                   <button
                     key={idx}
-                    className={`btn btn-xs ${mudraIndex === idx ? 'btn-info' : 'btn-link'}`}
+                    className={`btn btn-sm ${mudraIndex === idx ? 'btn-info' : 'btn-link'}`}
                     style={{ 
                       borderRadius: '12px', 
                       padding: '4px 15px',
@@ -386,7 +386,7 @@ const Pranayama = () => {
                   </button>
                 ))}
               </div>
-              <button className="btn btn-link btn-xs" onClick={() => scroll(stepScrollerRef, 'right')}>&gt;</button>
+              <button className="btn btn-link btn-sm" onClick={() => scroll(stepScrollerRef, 'right')}>&gt;</button>
             </div>
 
             <h2 className="text-center" style={{ color: '#c92200', fontFamily: "'Georgia', serif", fontWeight: 'bold', marginBottom: '25px' }}>
@@ -442,7 +442,7 @@ const Pranayama = () => {
                   Next Step
                 </button>
               )}
-              <button className="btn btn-default btn-lg p-btn" style={{ marginLeft: '10px' }} onClick={resetExercise}>Reset</button>
+              <button className="btn btn-secondary btn-lg p-btn" style={{ marginLeft: '10px' }} onClick={resetExercise}>Reset</button>
             </div>
             
             <p className="text-center" style={{ marginTop: '30px', color: '#bbb', fontStyle: 'italic' }}>

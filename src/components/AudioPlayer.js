@@ -86,7 +86,7 @@ const AudioPlayer = ({ category }) => {
                   ></iframe>
                 </div>
                 <button 
-                  className="btn btn-default btn-sm" 
+                  className="btn btn-secondary btn-sm" 
                   style={{ marginTop: '10px' }}
                   onClick={() => setActiveYoutubeId(null)}
                 >
@@ -204,7 +204,7 @@ const AudioPlayer = ({ category }) => {
                         </span>
                         {track.youtubeLink && (
                           <button 
-                            className="btn btn-link btn-xs"
+                            className="btn btn-link btn-sm"
                             style={{ color: '#FF0000', textDecoration: 'none', marginLeft: 'auto', padding: 0 }}
                             onClick={(e) => {
                               e.stopPropagation();

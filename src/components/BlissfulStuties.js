@@ -30,7 +30,7 @@ const BlissfulStuties = () => {
         zIndex: 100,
         border: '1px solid #f0e6d2'
       }}>
-        <button className="btn btn-default" onClick={() => scroll('left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
+        <button className="btn btn-secondary" onClick={() => scroll('left')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&lt;</button>
         
         <div ref={scrollerRef} style={{ 
           display: 'flex', 
@@ -45,7 +45,7 @@ const BlissfulStuties = () => {
           {stutiesData.map((item, index) => (
             <button 
               key={index}
-              className={`btn ${activeIndex === index && !showRamStuti ? 'btn-primary' : 'btn-default'}`} 
+              className={`btn ${activeIndex === index && !showRamStuti ? 'btn-primary' : 'btn-secondary'}`} 
               style={{ 
                 marginRight: '10px', 
                 flexShrink: 0,
@@ -59,7 +59,7 @@ const BlissfulStuties = () => {
             </button>
           ))}
           <button
-            className={`btn ${showRamStuti ? 'btn-primary' : 'btn-default'}`}
+            className={`btn ${showRamStuti ? 'btn-primary' : 'btn-secondary'}`}
             style={{
               marginRight: '10px',
               flexShrink: 0,
@@ -73,7 +73,7 @@ const BlissfulStuties = () => {
           </button>
         </div>
 
-        <button className="btn btn-default" onClick={() => scroll('right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
+        <button className="btn btn-secondary" onClick={() => scroll('right')} style={{ borderRadius: '50%', width: '30px', height: '30px', padding: 0 }}>&gt;</button>
       </div>
 
       <SlokaViewer 

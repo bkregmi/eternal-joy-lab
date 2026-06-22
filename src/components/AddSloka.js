@@ -85,7 +85,7 @@ const AddSloka = () => {
       )}
 
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
+        <div className="mb-3">
           <label>Target Category (JSON File)</label>
           <select className="form-control" value={category} onChange={(e) => setCategory(e.target.value)}>
             <option value="daily-prayers">Daily Prayers</option>
@@ -95,7 +95,7 @@ const AddSloka = () => {
           </select>
         </div>
 
-        <div className="form-group">
+        <div className="mb-3">
           <label>Sloka Title</label>
           <input 
             type="text" 
@@ -107,7 +107,7 @@ const AddSloka = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="mb-3">
           <label>Sanskrit Verses (One line per verse)</label>
           <textarea 
             className="form-control" 
@@ -119,7 +119,7 @@ const AddSloka = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="mb-3">
           <label>English Transliteration (One line per verse)</label>
           <textarea 
             className="form-control" 
@@ -130,7 +130,7 @@ const AddSloka = () => {
           />
         </div>
 
-        <div className="form-group">
+        <div className="mb-3">
           <label>Meaning</label>
           <textarea 
             className="form-control" 
