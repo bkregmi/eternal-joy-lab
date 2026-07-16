@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './PrayerViewer.css';
+import { SlokaAudioButton, stopAllAudio } from './SlokaAudio';
 
 const SlokaViewer = ({ data, pageTitle }) => {
   const [visibility, setVisibility] = useState({
@@ -7,10 +8,16 @@ const SlokaViewer = ({ data, pageTitle }) => {
     english: false,
     meaning: false
   });
+  const [showKeyWarning, setShowKeyWarning] = useState(true);
 
   useEffect(() => {
     if (pageTitle) document.title = pageTitle;
-  }, [pageTitle]);
+    
+    // Stop all audio playback when page or data changes
+    return () => {
+      stopAllAudio();
+    };
+  }, [pageTitle, data]);
 
   if (!data || data.length === 0) {
     return <div className="whiteBG" style={{ padding: '20px' }}>No verses available.</div>;
@@ -77,6 +84,14 @@ const SlokaViewer = ({ data, pageTitle }) => {
                 </label>
               </div>
 
+            {showKeyWarning && !process.env.REACT_APP_GCP_TTS_KEY && (
+              <div className="alert alert-info alert-dismissible fade show text-center" role="alert" style={{ fontSize: '0.85em', margin: '0 0 12px 0', borderRadius: '12px', background: '#eef7fc', border: '1px solid #bce1f4', color: '#1d6f8a', position: 'relative' }}>
+                <i className="bi bi-info-circle-fill me-2"></i>
+                <strong>Premium Audio:</strong> To enable high-quality metered Sanskrit chanting, add your Google Cloud API key to your <code>.env</code> file. Currently falling back to browser voice.
+                <button type="button" className="btn-close" onClick={() => setShowKeyWarning(false)} aria-label="Close" style={{ position: 'absolute', right: '10px', top: '50%', transform: 'translateY(-50%)', background: 'none', border: 'none', fontSize: '1.2em', color: '#1d6f8a', cursor: 'pointer', lineHeight: 1 }}><i className="bi bi-x"></i></button>
+              </div>
+            )}
+
             {data.map((item, index) => (
               <article key={item.title || index} className="prayer-item" style={{ marginBottom: '10px', border: 'none' }}>
                 <h2 style={{ color: '#2c3e50', borderBottom: '2px solid #ff9933', paddingBottom: '3px', marginBottom: '8px', fontFamily: "'Georgia', serif", fontWeight: 'bold', fontSize: '1.5em' }}>
@@ -85,14 +100,20 @@ const SlokaViewer = ({ data, pageTitle }) => {
                 {item.slokas.map((sloka, sIdx) => (
                   <div key={`${item.title}-sloka-${sloka.id}-${sIdx}`} className="sloka-container" style={{ 
                     background: '#fff',
-                    padding: '8px 15px',
+                    padding: '8px 45px 8px 15px', // Added padding on the right to prevent overlap with audio button
                     borderRadius: '15px',
                     marginBottom: '8px',
                     boxShadow: '0 4px 12px rgba(0,0,0,0.04)',
                     fontFamily: "'Georgia', serif",
                     border: 'none', // Removed the internal border
-                    borderLeft: '6px solid #ff9933' // Reinstated saffron border
+                    borderLeft: '6px solid #ff9933', // Reinstated saffron border
+                    position: 'relative'
                   }}>
+                    {sloka.sanskrit && (
+                      <div style={{ position: 'absolute', top: '8px', right: '12px', zIndex: 10 }}>
+                        <SlokaAudioButton text={sloka.sanskrit} englishText={sloka.english} />
+                      </div>
+                    )}
                     {visibility.sanskrit && sloka.sanskrit && (
                       <div className="sanskrit" style={{ fontSize: '1.1em', color: '#c92200', textAlign: 'center', marginBottom: '3px', lineHeight: '1.4', fontWeight: 'bold' }}>
                         {sloka.sanskrit.map((line, idx) => (
